@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>Exe</OutputType>
+	  <TargetFramework>net8.0</TargetFramework>
+	  <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <RootNamespace>IpLocationService</RootNamespace>
+	  <NoWarn>1701;1702;1591</NoWarn>
+	  <PublishReadyToRun>true</PublishReadyToRun>
+	  <PublishSingleFile>false</PublishSingleFile>
+	  <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Excel\SysWeaver.Excel.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.IpLocation.MySqlCache\SysWeaver.IpLocation.MySqlCache.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.IpLocation\SysWeaver.IpLocation.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Auth\SysWeaver.MicroService.Auth.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.ChartJs.Excel\SysWeaver.MicroService.ChartJs.Excel.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Edit\SysWeaver.MicroService.Edit.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.MySqlAudit\SysWeaver.MicroService.MySqlAudit.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.NetHttpServer\SysWeaver.MicroService.NetHttpServer.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.Log\SysWeaver.MicroServices.Log.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.ServiceManager\SysWeaver.MicroServices.ServiceManager.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryUnix\SysWeaver.OsServices.ServiceHostFactoryUnix.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryWin32NT\SysWeaver.OsServices.ServiceHostFactoryWin32NT.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices\SysWeaver.OsServices.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security.Acme\SysWeaver.Security.Acme.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Serialization.SafeJson\SysWeaver.Serialization.SafeJson.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="IpLocationService.Services.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

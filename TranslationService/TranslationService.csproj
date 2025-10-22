@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <NoWarn>1701;1702;1591</NoWarn>
+        <PublishReadyToRun>true</PublishReadyToRun>
+        <PublishSingleFile>false</PublishSingleFile>
+        <PublishTrimmed>false</PublishTrimmed>
+		<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+		<RootNamespace>SysWeaver</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.AI.LlmTranslator\SysWeaver.AI.LlmTranslator.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.AI.OpenAI\SysWeaver.AI.OpenAI.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.ExploreModule\SysWeaver.HttpServer.ExploreModule.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.IconModule\SysWeaver.HttpServer.IconModule.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Auth\SysWeaver.MicroService.Auth.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Edit\SysWeaver.MicroService.Edit.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.HttpServer\SysWeaver.MicroService.HttpServer.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.MySqlAudit\SysWeaver.MicroService.MySqlAudit.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.NetHttpServer\SysWeaver.MicroService.NetHttpServer.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.TranslationDbCache\SysWeaver.MicroService.TranslationDbCache.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Translation\SysWeaver.MicroService.Translation.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.Log\SysWeaver.MicroServices.Log.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.ServiceManager\SysWeaver.MicroServices.ServiceManager.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryWin32NT\SysWeaver.OsServices.ServiceHostFactoryWin32NT.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices\SysWeaver.OsServices.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security.Acme\SysWeaver.Security.Acme.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Serialization.SafeJson\SysWeaver.Serialization.SafeJson.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Tor\SysWeaver.Tor.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TranslationService.Services.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

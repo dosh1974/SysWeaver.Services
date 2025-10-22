@@ -1,0 +1,185 @@
+[
+
+  {
+    "Type": "SysWeaver.MicroService.FileLogService, SysWeaver.MicroServices.Log"
+  },
+
+  {
+    "Type": "SysWeaver.AppInfo, SysWeaver.Common",
+    "Params": {
+      "AppName": "Exchange Rate Service",
+      "AppSeed": 639931341
+    }
+  },
+
+  {
+    "Type": "SysWeaver.Serialization.SafeJsonSerializer, SysWeaver.Serialization.SafeJson"
+  },
+
+  {
+    "Type": "SysWeaver.Auth.SimpleAuthorizer, SysWeaver.Auth.Core",
+    "Params": {
+      "Location": "C:\\Keys\\ExchangeRateUsers.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.AuthManagerService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.LoginService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
+    "Params": {
+      "Folders": [
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.Chat\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer.ExploreModule\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer.IconModule\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Edit\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ChartJs\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Auth\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        }
+
+      ]
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.StaticDataHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ApiHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IconHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ExploreHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.WebMenuService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.TypeService, SysWeaver.MicroService.Edit"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.MySqlApiAuditService, SysWeaver.MicroService.MySqlAudit",
+    "Params": {
+      "CredFile": "C:\\Keys\\MySql.txt",
+      "Schema": "ExchangeRateAudit"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security",
+    "Params": {
+      "Names": [ "exchangerates.sysweaver.com" ]
+    }
+  },
+
+  {
+    "Type": "SysWeaver.Excel.ExcelService, SysWeaver.Excel",
+    "Params": {
+      "CredFile": "C:\\Keys\\GemBox.Spreadsheet.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ChartJsService, SysWeaver.MicroService.ChartJs"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ChartJsExcelService, SysWeaver.MicroService.ChartJs.Excel"
+  },
+
+  {
+    "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IsoDataService, SysWeaver.MicroService.Edit"
+  },
+
+  {
+    "Type": "SysWeaver.ExchangeRate.Sources.ErsFixerDotIo, SysWeaver.ExchangeRate",
+    "Params": {
+      "CredFile": "C:\\Keys\\fixer.io.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.ExchangeRate.Sources.ErsExchangeRatesApiDotIo, SysWeaver.ExchangeRate",
+    "Params": {
+      "CredFile": "C:\\Keys\\exchangeratesapi.io.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.ExchangeRate.ExchangeRateService, SysWeaver.ExchangeRate"
+  },
+
+  {
+    "Type": "SysWeaver.ExchangeRate.ExchangeRateDebugService, SysWeaver.ExchangeRate"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    "Params": {
+      "ListenOn": [
+        {
+          "Prefix": "https://*:443/",
+          "AddToFirewall": true,
+          "Certificate": "*"
+        }
+      ]
+
+    }
+  }
+
+]

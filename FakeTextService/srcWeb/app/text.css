@@ -1,0 +1,113 @@
+﻿
+body
+{
+    overflow: hidden;
+}
+
+input {
+    box-sizing: border-box;
+    font-size: 150%;
+    width: 100%;
+    border: none;
+    background-color: rgba(var(--ThemeMainRGB), 0.1);
+    color: var(--ThemeMain);
+    border-radius: var(--ThemeRadInp);
+    padding: 1px 12px 1px 12px;
+    border: 2px solid transparent;
+    outline: none !important;
+    transition: color linear var(--ThemeFadeDuration), border linear var(--ThemeFadeDuration);
+}
+
+    input:focus {
+        border: 2px solid var(--ThemeAcc2);
+        color: var(--ThemeAcc1);
+    }
+
+    input:hover {
+        border: 2px solid rgba(var(--ThemeAcc2RGB), 0.5);
+    }
+
+        input:hover:focus {
+            border: 2px solid var(--ThemeAcc2);
+        }
+
+
+    input::placeholder {
+        color: var(--ThemeMain25);
+        font-style: italic;
+        font-size: 80%;
+    }
+
+
+button {
+    box-sizing: border-box;
+    font-size: 150%;
+    width: 100%;
+    border: none;
+    background-color: var(--ThemeAcc1);
+    color: var(--ThemeMain);
+    border-radius: var(--ThemeRadInp);
+    padding: 1px 12px 1px 12px;
+    border: 2px solid transparent;
+    outline: none !important;
+    transition: color linear var(--ThemeFadeDuration), border linear var(--ThemeFadeDuration), opacity linear var(--ThemeFadeDuration);
+    color: var(--ThemeBackground);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button:disabled
+{
+    opacity: 0.25;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+
+
+    button:focus {
+        border: 2px solid var(--ThemeAcc2);
+        opacity: 1.0;
+    }
+
+    button:hover {
+        border: 2px solid rgba(var(--ThemeAcc2RGB), 0.5);
+        opacity: 1.0;
+    }
+
+        button:hover:focus {
+            border: 2px solid var(--ThemeAcc2);
+            opacity: 1.0;
+        }
+
+
+iframe {
+    box-shadow: 0 0 64px rgba(var(--ThemeAcc1RGB), .15);
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    top: 20em;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 20em);
+    border: none;
+}
+
+SysWeaver-Label {
+    display: block;
+    padding: 0.25em;
+    font-size: 75%;
+    text-transform: uppercase;
+    color: var(--ThemeAcc2);
+}
+
+input[type="tel"] {
+    display: block;
+    margin-bottom: 1em;
+}
+
+input[type="text"] {
+    display: block;
+    margin-bottom: 1em;
+}

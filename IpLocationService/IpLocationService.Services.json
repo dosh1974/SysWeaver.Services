@@ -1,0 +1,213 @@
+[
+
+  {
+    "Type": "SysWeaver.MicroService.FileLogService, SysWeaver.MicroServices.Log"
+  },
+
+  {
+    "Type": "SysWeaver.AppInfo, SysWeaver.Common",
+    "Params": {
+      "AppName": "IP Location Service",
+      "AppSeed": 832333018
+    }
+  },
+
+  {
+    "Type": "SysWeaver.Serialization.SafeJsonSerializer, SysWeaver.Serialization.SafeJson"
+  },
+
+  {
+    "Type": "SysWeaver.Auth.SimpleAuthorizer, SysWeaver.Auth.Core",
+    "Params": {
+      "Location": "C:\\Keys\\IpLocationUsers.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.AuthManagerService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.LoginService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
+    "Params": {
+      "Folders": [
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.Chat\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer.ExploreModule\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer.IconModule\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Edit\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ChartJs\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Auth\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        }
+
+      ]
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.StaticDataHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ApiHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IconHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ExploreHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.WebMenuService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.TypeService, SysWeaver.MicroService.Edit"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.MySqlApiAuditService, SysWeaver.MicroService.MySqlAudit",
+    "Params": {
+      "CredFile": "C:\\Keys\\MySql.txt",
+      "Schema": "IpLocation"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security",
+    "Params": {
+      "Names": [ "iplocation.solidicon.io" ]
+    }
+  },
+
+  /* 
+  {
+    "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
+    "Params": {
+      "AuthApi": "https://api.buypass.com/acme/directory",
+      "Email": "dh@solidicon.com  ",
+      "DomainName": "iplocation.solidicon.io"
+    }
+  },
+*/
+
+  {
+    "Type": "SysWeaver.Excel.ExcelService, SysWeaver.Excel",
+    "Params": {
+      "CredFile": "C:\\Keys\\GemBox.Spreadsheet.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ChartJsService, SysWeaver.MicroService.ChartJs"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ChartJsExcelService, SysWeaver.MicroService.ChartJs.Excel"
+  },
+
+  {
+    "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IsoDataService, SysWeaver.MicroService.Edit"
+  },
+
+  /*
+  {
+    "Type": "SysWeaver.IpLocation.Sources.AppIpgeolocationIoSource, SysWeaver.IpLocation",
+    "Params": {
+      "CredFile": "C:\\Keys\\app.ipgeolocation.io.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.IpLocation.Sources.Ip2locationIoSource, SysWeaver.IpLocation",
+    "Params": {
+      "CredFile": "C:\\Keys\\ip2location.io.txt"
+    }
+  },
+
+  
+  {
+    "Type": "SysWeaver.IpLocation.Caches.IpLocationMySqlCache, SysWeaver.IpLocation.MySqlCache",
+    "Params": {
+      "CredFile": "C:\\Keys\\MySql.txt"
+    }
+  },
+
+  */
+
+  {
+    "Type": "SysWeaver.IpLocation.Sources.IlsSysWeaverService, SysWeaver.IpLocation",
+    "Params": {
+      "BaseUrl": "https://iplocation.solidicon.io/Api/IpLocation/",
+      "CredFile": "C:\\Keys\\FluffyIpLocationService.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.IpLocation.IpLocationService, SysWeaver.IpLocation"
+  },
+
+
+  {
+    "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    "Params": {
+      "AllowBasicAuth": true,
+      "ListenOn": [
+        {
+          "Prefix": "https://*:443/",
+          "AddToFirewall": true,
+          "Certificate": "*"
+        }
+      ]
+
+    }
+  }
+
+]

@@ -1,0 +1,162 @@
+[
+
+  {
+    "Type": "SysWeaver.MicroService.FileLogService, SysWeaver.MicroServices.Log",
+    "Params": {
+    }
+  },
+
+  {
+    "Type": "SysWeaver.AppInfo, SysWeaver.Common",
+    "Params": {
+      "AppSeed": 1332758220
+    }
+  },
+
+  {
+    "Type": "SysWeaver.Serialization.SafeJsonSerializer, SysWeaver.Serialization.SafeJson"
+  },
+
+
+  {
+    "Type": "SysWeaver.Auth.SimpleAuthorizer, SysWeaver.Auth.Core",
+    "Params": {
+      "Location": "C:\\Keys\\TranslationUsers.txt",
+      "AllowBasicAuth": false,
+      "ApiKeyAuth": "Service"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.AuthManagerService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.LoginService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
+    "Params": {
+      "CacheSeconds": 60,
+      "Folders": [
+        {
+          "DiscFolder": "../../../../../SysWeaver/SysWeaver.MicroService.TranslationDbCache/srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "../../../../../SysWeaver/SysWeaver.HttpServer/srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "../../../../../SysWeaver/SysWeaver.HttpServer.ExploreModule/srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        }
+
+      ]
+    }
+
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.StaticDataHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ApiHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IconHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ExploreHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.WebMenuService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IsoDataService, SysWeaver.MicroService.Edit"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.TypeService, SysWeaver.MicroService.Edit"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.MySqlApiAuditService, SysWeaver.MicroService.MySqlAudit",
+    "Params": {
+      "CredFile": "C:\\Keys\\MySql.txt",
+      "Schema": "Translations"
+    }
+  },
+
+
+  {
+    "Type": "SysWeaver.AI.OpenAiService, SysWeaver.AI.OpenAI",
+    "Params": {
+      "CredFile": "C:\\Keys\\OpenAI.txt",
+      //"EndPoint": "http://192.168.1.112:1234/v1/"
+
+    }
+  },
+
+  {
+    "Type": "SysWeaver.AI.LlmTranslator, SysWeaver.AI.LlmTranslator",
+  },
+
+  /*{
+    "Type": "SysWeaver.Translation.GoogleTranslator, SysWeaver.Translation.Google",
+    "Params": {
+      "StartTor": true
+    }
+  },*/
+
+  {
+    "Type": "SysWeaver.MicroService.TranslatorDebugService, SysWeaver.MicroService.Translation"
+  },
+
+  {
+    "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.TranslatorDbCacheService, SysWeaver.MicroService.TranslationDbCache",
+    "Params": {
+      "CredFile": "C:\\Keys\\MySql.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.TranslatorApiService, SysWeaver.MicroService.Translation"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.TranslatorExtensionHandlers, SysWeaver.MicroService.Translation"
+  },
+
+
+  {
+    "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    "Params": {
+      "AutoTranslate": false,
+      "ListenOn": [
+        {
+          "Prefix": "http://*:10101/",
+          "AddToFirewall": true
+        }
+      ]
+
+    }
+  }
+
+]
