@@ -76,20 +76,9 @@
   {
     "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security",
     "Params": {
-      "Names": [ "faketext.solidicon.io" ]
+      "Names": [ "faketext.sysweaver.io" ]
     }
   },
-
-  /* 
-  {
-    "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
-    "Params": {
-      "AuthApi": "https://api.buypass.com/acme/directory",
-      "Email": "dh@solidicon.com  ",
-      "DomainName": "faketext.solidicon.io"
-    }
-  },
-*/
 
   {
     "Type": "SysWeaver.Excel.ExcelService, SysWeaver.Excel",

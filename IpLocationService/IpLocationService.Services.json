@@ -119,20 +119,9 @@
   {
     "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security",
     "Params": {
-      "Names": [ "iplocation.solidicon.io" ]
+      "Names": [ "iplocation.sysweaver.io" ]
     }
   },
-
-  /* 
-  {
-    "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
-    "Params": {
-      "AuthApi": "https://api.buypass.com/acme/directory",
-      "Email": "dh@solidicon.com  ",
-      "DomainName": "iplocation.solidicon.io"
-    }
-  },
-*/
 
   {
     "Type": "SysWeaver.Excel.ExcelService, SysWeaver.Excel",
