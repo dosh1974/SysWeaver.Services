@@ -29,7 +29,7 @@
 Some services.  
 
 ## BUILD  
-Building requires that the [SysWeaver](https://github.com/dosh1974/SysWeaver) repository is Cloned to the same folder as the [SysWeaver.Tools](https://github.com/dosh1974/SysWeaver.Tools) repository:  
+Building requires that the [SysWeaver](https://github.com/dosh1974/SysWeaver) repository is Cloned to the same folder as the [SysWeaver.Services](https://github.com/dosh1974/SysWeaver.Services) repository:  
 ```
 C:\Dev\SysWeaver
 C:\Dev\SysWeaver.Tools
