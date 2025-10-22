@@ -178,6 +178,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationService", "Trans
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.IpLocation.MySqlCache", "..\SysWeaver\SysWeaver.IpLocation.MySqlCache\SysWeaver.IpLocation.MySqlCache.csproj", "{CC7783F2-EEA5-59AC-72EE-74EDB21BCCEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.ExchangeRate", "..\SysWeaver\SysWeaver.ExchangeRate\SysWeaver.ExchangeRate.csproj", "{9C207E97-9822-722A-9025-55EDC253776C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1232,6 +1234,18 @@ Global
 		{CC7783F2-EEA5-59AC-72EE-74EDB21BCCEB}.Release|x64.Build.0 = Release|Any CPU
 		{CC7783F2-EEA5-59AC-72EE-74EDB21BCCEB}.Release|x86.ActiveCfg = Release|Any CPU
 		{CC7783F2-EEA5-59AC-72EE-74EDB21BCCEB}.Release|x86.Build.0 = Release|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Debug|x64.Build.0 = Debug|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Debug|x86.Build.0 = Debug|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Release|x64.ActiveCfg = Release|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Release|x64.Build.0 = Release|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Release|x86.ActiveCfg = Release|Any CPU
+		{9C207E97-9822-722A-9025-55EDC253776C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1320,6 +1334,7 @@ Global
 		{F7E29911-C28E-FAA7-B9D3-369B38DD6FDC} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 		{366EDBB6-44A1-1134-0BD7-74989C1E5EF5} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 		{CC7783F2-EEA5-59AC-72EE-74EDB21BCCEB} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
+		{9C207E97-9822-722A-9025-55EDC253776C} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19E20D7F-3A21-4862-9481-9DFD897C2FA4}
