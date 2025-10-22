@@ -32,5 +32,5 @@ Some services.
 Building requires that the [SysWeaver](https://github.com/dosh1974/SysWeaver) repository is Cloned to the same folder as the [SysWeaver.Services](https://github.com/dosh1974/SysWeaver.Services) repository:  
 ```
 C:\Dev\SysWeaver
-C:\Dev\SysWeaver.Tools
+C:\Dev\SysWeaver.Services
 ```
