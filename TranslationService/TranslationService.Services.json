@@ -104,14 +104,27 @@
   {
     "Type": "SysWeaver.AI.OpenAiService, SysWeaver.AI.OpenAI",
     "Params": {
-      "CredFile": "C:\\Keys\\OpenAI.txt",
-      //"EndPoint": "http://192.168.1.112:1234/v1/"
-
+      "CredFile": "C:\\Keys\\OpenAI.txt"
+      /*"EndPoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
+      "CredFile": "C:\\Keys\\GoogleGemini.txt"*/
     }
   },
 
   {
     "Type": "SysWeaver.AI.LlmTranslator, SysWeaver.AI.LlmTranslator",
+    "Params": {
+       // Open AI (must match EndPoint and CredFile in OpenAiService params)
+      "LowModel": "gpt-4.1-nano",     // $0.10 + $0.40
+      "MediumModel": "gpt-4.1-mini",  // $0.40 + $1.60
+      "HighModel": "gpt-4.1"         // $2.00 + $8.00
+      
+
+      /*// Google (must match EndPoint and CredFile in OpenAiService params)
+      "LowModel": "gemini-2.0-flash-lite", // $0.075 + $0.30
+      "MediumModel": "gemini-2.5-flash-lite", // $0.10 + $0.40
+      "HighModel": "gemini-2.5-flash-lite" // $0.10 + $0.40*/
+
+    }
   },
 
   /*{
