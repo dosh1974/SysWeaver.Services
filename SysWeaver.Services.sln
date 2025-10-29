@@ -180,6 +180,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.IpLocation.MySqlC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.ExchangeRate", "..\SysWeaver\SysWeaver.ExchangeRate\SysWeaver.ExchangeRate.csproj", "{9C207E97-9822-722A-9025-55EDC253776C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceServer", "WebServerService\WebServiceServer.csproj", "{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1246,6 +1248,18 @@ Global
 		{9C207E97-9822-722A-9025-55EDC253776C}.Release|x64.Build.0 = Release|Any CPU
 		{9C207E97-9822-722A-9025-55EDC253776C}.Release|x86.ActiveCfg = Release|Any CPU
 		{9C207E97-9822-722A-9025-55EDC253776C}.Release|x86.Build.0 = Release|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Debug|x64.Build.0 = Debug|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Debug|x86.Build.0 = Debug|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Release|x64.ActiveCfg = Release|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Release|x64.Build.0 = Release|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Release|x86.ActiveCfg = Release|Any CPU
+		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

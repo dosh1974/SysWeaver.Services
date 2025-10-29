@@ -5,25 +5,13 @@
   },
 
   {
-    "Type": "SysWeaver.AppInfo, SysWeaver.Common",
-    "Params": {
-      "AppName": "Fake Text Service",
-      "AppSeed": 1601905269
-    }
-  },
-
-  {
-    "Type": "FakeTextService.FakeTextServiceFiles, FakeTextService"
-  },
-
-  {
     "Type": "SysWeaver.Serialization.SafeJsonSerializer, SysWeaver.Serialization.SafeJson"
   },
 
   {
     "Type": "SysWeaver.Auth.SimpleAuthorizer, SysWeaver.Auth.Core",
     "Params": {
-      "Location": "C:\\Keys\\FakeTextUsers.txt"
+      "Location": "C:\\Keys\\WebServiceServer_Users.txt"
     }
   },
 
@@ -36,17 +24,18 @@
   },
 
   {
-    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer"
-    /*    "Params": {
+    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
+    "Params": {
       "Folders": [
-        {
-          "DiscFolder": "../../../srcWeb",
+        /*        {
+          "DiscFolder": "Some folder",
           "WebFolder": "",
           "ClientCacheDuration": 0,
           "RequestCacheDuration": 0
         }
+*/
       ]
-    }*/
+    }
   },
 
   {
@@ -76,24 +65,19 @@
   {
     "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security",
     "Params": {
-      "Names": [ "faketext.sysweaver.com" ]
+      "Names": [ "webserver.sysweaver.com" ]
     }
   },
 
+  /*
   {
-    "Type": "SysWeaver.Excel.ExcelService, SysWeaver.Excel",
+    "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
     "Params": {
-      "CredFile": "C:\\Keys\\GemBox.Spreadsheet.txt"
+      "Email": "yourname@yourdomain",
+      "DomainName": "webserver.sysweaver.com"
     }
   },
-
-  {
-    "Type": "SysWeaver.MicroService.ChartJsService, SysWeaver.MicroService.ChartJs"
-  },
-
-  {
-    "Type": "SysWeaver.MicroService.ChartJsExcelService, SysWeaver.MicroService.ChartJs.Excel"
-  },
+  */
 
   {
     "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
@@ -104,13 +88,8 @@
   },
 
   {
-    "Type": "SysWeaver.TextMessage.FakeTextMessageService, SysWeaver.TextMessage.Fake"
-  },
-
-  {
     "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
     "Params": {
-      "AllowBasicAuth": true,
       "ListenOn": [
         {
           "Prefix": "https://*:443/",

@@ -119,7 +119,7 @@
   {
     "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security",
     "Params": {
-      "Names": [ "iplocation.sysweaver.io" ]
+      "Names": [ "iplocation.sysweaver.com" ]
     }
   },
 
