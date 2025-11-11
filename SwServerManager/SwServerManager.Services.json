@@ -59,17 +59,24 @@
   },
 
   {
-    "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security"
-  },
-
-  {
     "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
   },
 
   {
-    "Type": "SysWeaver.MicroService.FileUploaderService, SysWeaver.MicroService.FileUploader"
+    "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security"
   },
 
+
+  /*  {
+    "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
+    "Params": {
+      "Email": "dh@solidicon.com",
+      "DomainName": "mimisserver.solidicon.io"
+    }
+  },
+  */
+
+  
   {
     "Type": "SysWeaver.MicroService.FolderSyncService, SysWeaver.MicroService.FolderSync"
   },
@@ -77,6 +84,7 @@
   {
     "Type": "SysWeaver.MicroService.ServerManagerService, SysWeaver.MicroService.ServerManager",
     "Params": {
+      "SyncAuth": "Debug,Admin,Service",
       "Services": [
         {
           "Name": "Hypnos Client"
