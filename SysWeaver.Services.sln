@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SysWeaver", "SysWeaver", "{43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SysWeaver", "_SysWeaver", "{43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.Common", "..\SysWeaver\SysWeaver.Common\SysWeaver.Common.csproj", "{377B547B-8EBA-4DF3-A3DC-DB8F01F4C12B}"
 EndProject
@@ -146,41 +146,45 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.MicroService.Tran
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.IpLocation", "..\SysWeaver\SysWeaver.IpLocation\SysWeaver.IpLocation.csproj", "{E2F3D03C-0515-4DC3-9EFB-D8C79D0788E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.MicroService.CustomUserImage", "..\SysWeaver\SysWeaver.MicroService.CustomUserImage\SysWeaver.MicroService.CustomUserImage.csproj", "{FD9DC33C-D1EC-12F2-B6D3-E7FB2CDFF4C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.MicroService.CustomUserImage", "..\SysWeaver\SysWeaver.MicroService.CustomUserImage\SysWeaver.MicroService.CustomUserImage.csproj", "{FD9DC33C-D1EC-12F2-B6D3-E7FB2CDFF4C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.MicroService.FolderSync", "..\SysWeaver\SysWeaver.MicroService.FolderSync\SysWeaver.MicroService.FolderSync.csproj", "{28B12389-BD54-4546-FDAB-6476030FA704}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.MicroService.FolderSync", "..\SysWeaver\SysWeaver.MicroService.FolderSync\SysWeaver.MicroService.FolderSync.csproj", "{28B12389-BD54-4546-FDAB-6476030FA704}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.FolderSync", "..\SysWeaver\SysWeaver.FolderSync\SysWeaver.FolderSync.csproj", "{C0EB1284-D265-7B6B-9A00-E2B0FCDF5A3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.FolderSync", "..\SysWeaver\SysWeaver.FolderSync\SysWeaver.FolderSync.csproj", "{C0EB1284-D265-7B6B-9A00-E2B0FCDF5A3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.MicroService.Avatar", "..\SysWeaver\SysWeaver.MicroService.Avatar\SysWeaver.MicroService.Avatar.csproj", "{B2EE1FF4-3A61-9FFD-4110-F0C966BE094A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.MicroService.Avatar", "..\SysWeaver\SysWeaver.MicroService.Avatar\SysWeaver.MicroService.Avatar.csproj", "{B2EE1FF4-3A61-9FFD-4110-F0C966BE094A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.Chat.MySql", "..\SysWeaver\SysWeaver.Chat.MySql\SysWeaver.Chat.MySql.csproj", "{3D900668-C2D3-4F6F-B9DE-36B0CA475A8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.Chat.MySql", "..\SysWeaver\SysWeaver.Chat.MySql\SysWeaver.Chat.MySql.csproj", "{3D900668-C2D3-4F6F-B9DE-36B0CA475A8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.LanguageIdentifier.FastText", "..\SysWeaver\SysWeaver.LanguageIdentifier.FastText\SysWeaver.LanguageIdentifier.FastText.csproj", "{59774D09-E3F0-40E7-A024-0B05FE144243}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.LanguageIdentifier.FastText", "..\SysWeaver\SysWeaver.LanguageIdentifier.FastText\SysWeaver.LanguageIdentifier.FastText.csproj", "{59774D09-E3F0-40E7-A024-0B05FE144243}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.LanguageIdentifier.Llm", "..\SysWeaver\SysWeaver.LanguageIdentifier.Llm\SysWeaver.LanguageIdentifier.Llm.csproj", "{5D658CA6-F5A0-4354-A7B2-C55DE9BACC01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.LanguageIdentifier.Llm", "..\SysWeaver\SysWeaver.LanguageIdentifier.Llm\SysWeaver.LanguageIdentifier.Llm.csproj", "{5D658CA6-F5A0-4354-A7B2-C55DE9BACC01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.MicroService.UserStorage", "..\SysWeaver\SysWeaver.MicroService.UserStorage\SysWeaver.MicroService.UserStorage.csproj", "{06894A56-E666-A336-2D82-4F853B696E78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.MicroService.UserStorage", "..\SysWeaver\SysWeaver.MicroService.UserStorage\SysWeaver.MicroService.UserStorage.csproj", "{06894A56-E666-A336-2D82-4F853B696E78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStack.Orm", "D:\SysWeaver\_external\simplestack.orm\src\SimpleStack.Orm\SimpleStack.Orm.csproj", "{9A6234CD-C2CB-4D97-178E-5A23DDE7B9CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStack.Orm", "D:\SysWeaver\_external\simplestack.orm\src\SimpleStack.Orm\SimpleStack.Orm.csproj", "{9A6234CD-C2CB-4D97-178E-5A23DDE7B9CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStack.Orm.MySQLConnector", "D:\SysWeaver\_external\simplestack.orm\src\SimpleStack.Orm.MySQLConnector\SimpleStack.Orm.MySQLConnector.csproj", "{F7E29911-C28E-FAA7-B9D3-369B38DD6FDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStack.Orm.MySQLConnector", "D:\SysWeaver\_external\simplestack.orm\src\SimpleStack.Orm.MySQLConnector\SimpleStack.Orm.MySQLConnector.csproj", "{F7E29911-C28E-FAA7-B9D3-369B38DD6FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fido2", "..\SysWeaver\_external\fido2-net-lib\Src\Fido2\Fido2.csproj", "{366EDBB6-44A1-1134-0BD7-74989C1E5EF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fido2", "..\SysWeaver\_external\fido2-net-lib\Src\Fido2\Fido2.csproj", "{366EDBB6-44A1-1134-0BD7-74989C1E5EF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRateService", "ExchangeRateService\ExchangeRateService.csproj", "{02FA305B-E779-0659-E89A-5F02DCBF57E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeRateService", "ExchangeRateService\ExchangeRateService.csproj", "{02FA305B-E779-0659-E89A-5F02DCBF57E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeTextService", "FakeTextService\FakeTextService.csproj", "{AB989214-D912-55AA-C78F-B3337F038EF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FakeTextService", "FakeTextService\FakeTextService.csproj", "{AB989214-D912-55AA-C78F-B3337F038EF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IpLocationService", "IpLocationService\IpLocationService.csproj", "{45150504-0FCF-1AE0-BF77-A48E778AD3A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IpLocationService", "IpLocationService\IpLocationService.csproj", "{45150504-0FCF-1AE0-BF77-A48E778AD3A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationService", "TranslationService\TranslationService.csproj", "{51BC31FD-BD3D-2534-F647-F4D465AB65AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslationService", "TranslationService\TranslationService.csproj", "{51BC31FD-BD3D-2534-F647-F4D465AB65AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.IpLocation.MySqlCache", "..\SysWeaver\SysWeaver.IpLocation.MySqlCache\SysWeaver.IpLocation.MySqlCache.csproj", "{CC7783F2-EEA5-59AC-72EE-74EDB21BCCEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.IpLocation.MySqlCache", "..\SysWeaver\SysWeaver.IpLocation.MySqlCache\SysWeaver.IpLocation.MySqlCache.csproj", "{CC7783F2-EEA5-59AC-72EE-74EDB21BCCEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.ExchangeRate", "..\SysWeaver\SysWeaver.ExchangeRate\SysWeaver.ExchangeRate.csproj", "{9C207E97-9822-722A-9025-55EDC253776C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.ExchangeRate", "..\SysWeaver\SysWeaver.ExchangeRate\SysWeaver.ExchangeRate.csproj", "{9C207E97-9822-722A-9025-55EDC253776C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceServer", "WebServerService\WebServiceServer.csproj", "{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServiceServer", "WebServerService\WebServiceServer.csproj", "{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysWeaver.Storage.Cdc", "..\SysWeaver\SysWeaver.Storage.Cdc\SysWeaver.Storage.Cdc.csproj", "{06CDD9CD-D32F-46EF-BA37-15829A18452D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwServerManager", "SwServerManager\SwServerManager.csproj", "{77956473-6F29-4C25-8B5E-6DEEB43B7482}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1260,6 +1264,30 @@ Global
 		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Release|x64.Build.0 = Release|Any CPU
 		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Release|x86.ActiveCfg = Release|Any CPU
 		{F9F66D78-2C0F-CCB8-D340-60E8164C7AE6}.Release|x86.Build.0 = Release|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Debug|x64.Build.0 = Debug|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Debug|x86.Build.0 = Debug|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Release|x64.ActiveCfg = Release|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Release|x64.Build.0 = Release|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Release|x86.ActiveCfg = Release|Any CPU
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D}.Release|x86.Build.0 = Release|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Debug|x64.Build.0 = Debug|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Debug|x86.Build.0 = Debug|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Release|x64.ActiveCfg = Release|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Release|x64.Build.0 = Release|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Release|x86.ActiveCfg = Release|Any CPU
+		{77956473-6F29-4C25-8B5E-6DEEB43B7482}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1349,6 +1377,7 @@ Global
 		{366EDBB6-44A1-1134-0BD7-74989C1E5EF5} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 		{CC7783F2-EEA5-59AC-72EE-74EDB21BCCEB} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 		{9C207E97-9822-722A-9025-55EDC253776C} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
+		{06CDD9CD-D32F-46EF-BA37-15829A18452D} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19E20D7F-3A21-4862-9481-9DFD897C2FA4}
