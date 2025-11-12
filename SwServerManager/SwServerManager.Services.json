@@ -8,8 +8,8 @@
     "Type": "SysWeaver.AppInfo, SysWeaver.Common",
     "Params": {
       "AppSeed": 498728593,
-      "AppName": "$(MachineName)Manager",
-      "AppDisplayName": "$(MachineName) Manager",
+      "AppName": "$(MachineNameCased)Manager",
+      "AppDisplayName": "$(MachineNameCased) Manager",
       "AppDescription": "Manages SysWeaver services on $(MachineName)"
     }
   },
