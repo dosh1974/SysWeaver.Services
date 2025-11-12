@@ -7,7 +7,10 @@
   {
     "Type": "SysWeaver.AppInfo, SysWeaver.Common",
     "Params": {
-      "AppSeed": 498728593
+      "AppSeed": 498728593,
+      "AppName": "$(MachineName)Manager",
+      "AppDisplayName": "$(MachineName) Manager",
+      "AppDescription": "Manages SysWeaver services on $(MachineName)"
     }
   },
 
@@ -31,7 +34,58 @@
   },
 
   {
-    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer"
+    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
+    "Params": {
+      "Folders": [
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer.ExploreModule\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer.IconModule\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Edit\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ChartJs\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Auth\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ServerManager\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        }
+
+
+      ]
+    }
   },
 
   {
@@ -52,6 +106,10 @@
 
   {
     "Type": "SysWeaver.MicroService.WebMenuService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ChartJsService, SysWeaver.MicroService.ChartJs"
   },
 
   {
@@ -76,7 +134,7 @@
   },
   */
 
-  
+
   {
     "Type": "SysWeaver.MicroService.FolderSyncService, SysWeaver.MicroService.FolderSync"
   },
@@ -87,7 +145,7 @@
       "SyncAuth": "Debug,Admin,Service",
       "Services": [
         {
-          "Name": "Hypnos Client"
+          "Name": "IpLocationService"
         }
       ]
     }
