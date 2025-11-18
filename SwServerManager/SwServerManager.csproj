@@ -21,6 +21,7 @@
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.FileUploader\SysWeaver.MicroService.FileUploader.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.FolderSync\SysWeaver.MicroService.FolderSync.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.HttpServer\SysWeaver.MicroService.HttpServer.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.MySqlAudit\SysWeaver.MicroService.MySqlAudit.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.NetHttpServer\SysWeaver.MicroService.NetHttpServer.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.ServerManager\SysWeaver.MicroService.ServerManager.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.Log\SysWeaver.MicroServices.Log.csproj" />

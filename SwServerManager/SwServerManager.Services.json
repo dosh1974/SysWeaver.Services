@@ -56,6 +56,12 @@
           "RequestCacheDuration": 0
         },
         {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroServices.Log\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
           "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Edit\\srcWeb",
           "WebFolder": "",
           "ClientCacheDuration": 0,

@@ -146,7 +146,7 @@
     "Type": "SysWeaver.MicroService.IsoDataService, SysWeaver.MicroService.Edit"
   },
 
-  /*
+
   {
     "Type": "SysWeaver.IpLocation.Sources.AppIpgeolocationIoSource, SysWeaver.IpLocation",
     "Params": {
@@ -161,7 +161,7 @@
     }
   },
 
-  
+
   {
     "Type": "SysWeaver.IpLocation.Caches.IpLocationMySqlCache, SysWeaver.IpLocation.MySqlCache",
     "Params": {
@@ -169,15 +169,15 @@
     }
   },
 
-  */
-
+  /*
   {
     "Type": "SysWeaver.IpLocation.Sources.IlsSysWeaverService, SysWeaver.IpLocation",
     "Params": {
-      "BaseUrl": "https://iplocation.solidicon.io/Api/IpLocation/",
-      "CredFile": "C:\\Keys\\FluffyIpLocationService.txt"
+      "BaseUrl": "https://iplocation.sysweaver.com/Api/IpLocation/",
+      "CredFile": "C:\\Keys\\IpLocationService.txt"
     }
   },
+  */
 
   {
     "Type": "SysWeaver.IpLocation.IpLocationService, SysWeaver.IpLocation"
