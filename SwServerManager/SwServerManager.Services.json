@@ -152,7 +152,11 @@
       "Services": [
         {
           "Name": "IpLocationService"
+        },
+        {
+          "Name": "GameWeaver"
         }
+
       ]
     }
   },
