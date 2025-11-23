@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
     <PublishReadyToRun>true</PublishReadyToRun>
@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.ExploreModule\SysWeaver.HttpServer.ExploreModule.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.IconModule\SysWeaver.HttpServer.IconModule.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.AspHttpServer\SysWeaver.MicroService.AspHttpServer.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Auth\SysWeaver.MicroService.Auth.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Edit\SysWeaver.MicroService.Edit.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.FileUploader\SysWeaver.MicroService.FileUploader.csproj" />

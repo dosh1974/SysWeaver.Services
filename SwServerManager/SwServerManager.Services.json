@@ -36,7 +36,7 @@
   {
     "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
     "Params": {
-      "Folders": [
+/*      "Folders": [
         {
           "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer\\srcWeb",
           "WebFolder": "",
@@ -90,7 +90,7 @@
         }
 
 
-      ]
+      ]*/
     }
   },
 
@@ -163,6 +163,7 @@
 
   {
     "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    //"Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
     "Params": {
       "ListenOn": [
         {
