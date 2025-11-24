@@ -30,7 +30,6 @@
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices\SysWeaver.OsServices.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security.Acme\SysWeaver.Security.Acme.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Serialization.SafeJson\SysWeaver.Serialization.SafeJson.csproj" />
-    <ProjectReference Include="..\..\SysWeaver\_external\fido2-net-lib\Src\Fido2\Fido2.csproj" />
   </ItemGroup>
 
   <ItemGroup>
