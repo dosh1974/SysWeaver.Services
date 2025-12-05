@@ -173,7 +173,7 @@
   {
     "Type": "SysWeaver.IpLocation.Sources.IlsSysWeaverService, SysWeaver.IpLocation",
     "Params": {
-      "BaseUrl": "https://iplocation.sysweaver.com/Api/IpLocation/",
+      "BaseUrl": "https://iplocation.sysweaver.com",
       "CredFile": "C:\\Keys\\IpLocationService.txt"
     }
   },
