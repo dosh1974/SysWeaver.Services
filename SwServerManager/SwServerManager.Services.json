@@ -98,6 +98,20 @@
         },
 
         {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Media\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+
+/*        {
+          "DiscFolder": "D:\\Temp",
+          "WebFolder": "Test",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+*/
+        {
           "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ServerManager\\srcWeb",
           "WebFolder": "",
           "ClientCacheDuration": 0,
@@ -137,6 +151,10 @@
 
   {
     "Type": "SysWeaver.MicroService.TypeService, SysWeaver.MicroService.Edit"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.MediaService, SysWeaver.MicroService.Media"
   },
 
   {
