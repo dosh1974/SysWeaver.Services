@@ -103,14 +103,19 @@
           "ClientCacheDuration": 0,
           "RequestCacheDuration": 0
         },
-
-/*        {
+        {
+          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ChartJs\\srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+                /*{
           "DiscFolder": "D:\\Temp",
           "WebFolder": "Test",
           "ClientCacheDuration": 0,
           "RequestCacheDuration": 0
-        },
-*/
+        },*/
+
         {
           "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ServerManager\\srcWeb",
           "WebFolder": "",
