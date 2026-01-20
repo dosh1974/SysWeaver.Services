@@ -189,6 +189,29 @@
     "Type": "SysWeaver.MicroService.ServerManagerService, SysWeaver.MicroService.ServerManager",
     "Params": {
       "SyncAuth": "Debug,Admin,Service",
+      "TextFiles": [
+        {
+          "Filename": "C:\\ProgramData\\MySQL\\MySQL Server 5.7\\my.ini",
+          "Desc": "MySql 5.7 config file",
+          "ScrollToEnd": false
+        },
+        {
+          "Filename": "C:\\ProgramData\\MySQL\\MySQL Server 5.7\\$(MachineName).log",
+          "Desc": "MySql 5.7 general log file",
+          "AllowDelete": true
+        },
+        {
+          "Filename": "C:\\ProgramData\\MySQL\\MySQL Server 5.7\\$(MachineName)-slow.log",
+          "Desc": "MySql 5.7 slow queries log",
+          "AllowDelete": true
+        },
+        {
+          "Filename": "C:\\ProgramData\\MySQL\\MySQL Server 5.7\\$(MachineName).err",
+          "Desc": "MySql 5.7 error log",
+          "AllowDelete": true
+        }
+      ],
+
       "Services": [
         {
           "Name": "IpLocationService"
