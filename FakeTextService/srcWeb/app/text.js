@@ -51,7 +51,7 @@ async function textMain() {
         p.appendChild(sb);
 
 
-        const msgList = document.createElement("iframe");
+        const msgList = createIFrame();
         msgList.src = "../explore/table.html?q=../Api/MessageTable";
         page.appendChild(msgList);
 
