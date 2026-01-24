@@ -36,94 +36,13 @@
   {
     "Type": "SysWeaver.MicroService.MySqlApiAuditService, SysWeaver.MicroService.MySqlAudit",
     "Params": {
-
       "CredFile": "$(KeyFolder)/MySql.txt",
       "Schema": "ServerManager"
     }
   },
 
   {
-    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
-    "Params": {
-      "Folders": [
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer.ExploreModule\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer.IconModule\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroServices.Log\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.FileUploader\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Edit\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },
-
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ChartJs\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },
-
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Auth\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },
-
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.Media\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ChartJs\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },
-                /*{
-          "DiscFolder": "D:\\Temp",
-          "WebFolder": "Test",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },*/
-
-        {
-          "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ServerManager\\srcWeb",
-          "WebFolder": "",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        }
-      ]
-    }
+    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer"
   },
 
   {
@@ -188,8 +107,8 @@
   {
     "Type": "SysWeaver.MicroService.ServerManagerService, SysWeaver.MicroService.ServerManager",
     "Params": {
-      "SyncAuth": "Debug,Admin,Service",
-      "TextFiles": [
+      "SyncAuth": "Debug,Admin,Service"
+      /*"TextFiles": [
         {
           "Filename": "C:\\ProgramData\\MySQL\\MySQL Server 5.7\\my.ini",
           "Desc": "MySql 5.7 config file",
@@ -211,23 +130,15 @@
           "Desc": "MySql 5.7 error log",
           "AllowDelete": true
         }
-      ],
-
-      "Services": [
-        {
-          "Name": "IpLocationService"
-        },
-        {
-          "Name": "GameWeaver"
-        }
-
       ]
+      */
+
     }
   },
 
   {
-    "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
-    //"Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
+    //"Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    "Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
     "Params": {
       "ListenOn": [
         {
