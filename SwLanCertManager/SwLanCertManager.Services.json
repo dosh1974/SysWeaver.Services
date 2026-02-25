@@ -1,0 +1,110 @@
+[
+
+  {
+    "Type": "SysWeaver.MicroService.FileLogService, SysWeaver.MicroServices.Log"
+  },
+
+  {
+    "Type": "SysWeaver.AppInfo, SysWeaver.Common",
+    "Params": {
+      "AppSeed": 498728593
+    }
+  },
+
+  {
+    "Type": "SysWeaver.Serialization.SafeJsonSerializer, SysWeaver.Serialization.SafeJson"
+  },
+
+  {
+    "Type": "SysWeaver.Auth.SimpleAuthorizer, SysWeaver.Auth.Core",
+    "Params": {
+      "Location": "$(KeyFolder)/LanCertManager_Users.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.AuthManagerService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.LoginService, SysWeaver.MicroService.Auth"
+  },
+
+
+
+  {
+    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
+    "Params": {
+      "Folders": [
+      ]
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.StaticDataHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ApiHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IconHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ExploreHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.WebMenuService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.TypeService, SysWeaver.MicroService.Edit"
+  },
+
+  {
+    "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security"
+  },
+
+
+  /*  {
+    "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
+    "Params": {
+      "Email": "",
+      "DomainName": ""
+    }
+  },
+  */
+
+
+
+  {
+    "Type": "SysWeaver.LanCertManagerService, SwLanCertManager",
+    "Params": {
+      //"Email":  "",
+      "Domains": [
+      ]
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    "Params": {
+      "ListenOn": [
+        {
+          "Prefix": "https://*",
+          "AddToFirewall": true,
+          "Certificate": "*"
+        }
+      ]
+
+    }
+  }
+
+]

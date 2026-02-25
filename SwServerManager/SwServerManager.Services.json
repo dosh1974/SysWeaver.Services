@@ -46,6 +46,7 @@
     "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
     "Params": {
       "Folders": [
+        /*
         {
           "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer\\srcWeb",
           "WebFolder": "",
@@ -109,19 +110,21 @@
           "ClientCacheDuration": 0,
           "RequestCacheDuration": 0
         },
-                /*{
-          "DiscFolder": "D:\\Temp",
-          "WebFolder": "Test",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
-        },*/
 
         {
           "DiscFolder": "D:\\SysWeaver\\SysWeaver.MicroService.ServerManager\\srcWeb",
           "WebFolder": "",
           "ClientCacheDuration": 0,
           "RequestCacheDuration": 0
-        }
+        },
+        {
+          "DiscFolder": "D:\\Temp",
+          "WebFolder": "Test",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+
+        */
       ]
     }
   },
@@ -174,15 +177,25 @@
   /*  {
     "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
     "Params": {
-      "Email": "dh@solidicon.com",
-      "DomainName": "mimisserver.solidicon.io"
+      "Email": "",
+      "DomainName": ""
     }
   },
   */
 
 
   {
-    "Type": "SysWeaver.MicroService.FolderSyncService, SysWeaver.MicroService.FolderSync"
+    "Type": "SysWeaver.MicroService.FolderSyncService, SysWeaver.MicroService.FolderSync",
+    "Params": {
+      "ManagedFolders": [
+        {
+          "Name": "Test",
+          "DiscFolder": "D:\\Temp\\SyncSource",
+          "AllowPull" :  true
+        }
+      ]
+    }
+
   },
 
   {
@@ -226,8 +239,8 @@
   },
 
   {
-    "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
-    //"Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
+    //"Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    "Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
     "Params": {
       "ListenOn": [
         {

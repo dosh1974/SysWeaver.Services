@@ -93,8 +93,8 @@
   /*  {
     "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
     "Params": {
-      "Email": "dh@solidicon.com",
-      "DomainName": "mimisserver.solidicon.io"
+      "Email": "",
+      "DomainName": ""
     }
   },
   */
