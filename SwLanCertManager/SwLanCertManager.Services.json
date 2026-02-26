@@ -69,11 +69,15 @@
   },
 
   {
+    "Type": "SysWeaver.Security.LanCertificateProvider, SysWeaver.Security"
+  },
+
+/*
+  {
     "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security"
   },
 
-
-  /*  {
+  {
     "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
     "Params": {
       "Email": "",
@@ -83,12 +87,13 @@
   */
 
 
-
   {
-    "Type": "SysWeaver.LanCertManagerService, SwLanCertManager",
+    "Type": "SysWeaver.MicroService.LanCertificateManagerService, SysWeaver.MicroService.LanCertificateManager",
     "Params": {
-      //"Email":  "",
+      "Email": "",
       "Domains": [
+        "",
+        ""
       ]
     }
   },

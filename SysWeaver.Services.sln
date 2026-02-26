@@ -190,6 +190,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.MicroService.Medi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwLanCertManager", "SwLanCertManager\SwLanCertManager.csproj", "{9628205E-5FFD-4A87-A55E-CE5D144BECD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.MicroService.LanCertificateManager", "..\SysWeaver\SysWeaver.MicroService.LanCertificateManager\SysWeaver.MicroService.LanCertificateManager.csproj", "{EFCDD408-6E76-446B-A39F-8E73003BCE1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1316,6 +1318,18 @@ Global
 		{9628205E-5FFD-4A87-A55E-CE5D144BECD3}.Release|x64.Build.0 = Release|Any CPU
 		{9628205E-5FFD-4A87-A55E-CE5D144BECD3}.Release|x86.ActiveCfg = Release|Any CPU
 		{9628205E-5FFD-4A87-A55E-CE5D144BECD3}.Release|x86.Build.0 = Release|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Debug|x64.Build.0 = Debug|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Debug|x86.Build.0 = Debug|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Release|x64.ActiveCfg = Release|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Release|x64.Build.0 = Release|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Release|x86.ActiveCfg = Release|Any CPU
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1407,6 +1421,7 @@ Global
 		{06CDD9CD-D32F-46EF-BA37-15829A18452D} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 		{46EDDB58-33F5-43C4-A208-B4827DF83E52} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 		{D5453C70-1E37-B985-321C-010979B5F9B7} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
+		{EFCDD408-6E76-446B-A39F-8E73003BCE1C} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19E20D7F-3A21-4862-9481-9DFD897C2FA4}
