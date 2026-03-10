@@ -46,7 +46,6 @@
     "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
     "Params": {
       "Folders": [
-        /*
         {
           "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer\\srcWeb",
           "WebFolder": "",
@@ -122,9 +121,8 @@
           "WebFolder": "Test",
           "ClientCacheDuration": 0,
           "RequestCacheDuration": 0
-        },
+        }
 
-        */
       ]
     }
   },
@@ -166,11 +164,15 @@
   },
 
   {
+    "Type": "SysWeaver.MicroService.MediaTransformerService, SysWeaver.MicroService.Media"
+  },
+
+  {
     "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
   },
 
   {
-    "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security"
+    "Type": "SysWeaver.Security.LanCertificateProvider, SysWeaver.Security"
   },
 
 
@@ -191,7 +193,7 @@
         {
           "Name": "Test",
           "DiscFolder": "D:\\Temp\\SyncSource",
-          "AllowPull" :  true
+          "AllowPull": true
         }
       ]
     }
@@ -239,8 +241,8 @@
   },
 
   {
-    //"Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
-    "Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
+    "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    //"Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
     "Params": {
       "ListenOn": [
         {
