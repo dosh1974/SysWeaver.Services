@@ -164,7 +164,11 @@
   },
 
   {
-    "Type": "SysWeaver.MicroService.MediaTransformerService, SysWeaver.MicroService.Media"
+    "Type": "SysWeaver.HttpTransformer.CachedTransformer, SysWeaver.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.HttpTransformer.ImageTransformer, SysWeaver.HttpTransformer.Image"
   },
 
   {

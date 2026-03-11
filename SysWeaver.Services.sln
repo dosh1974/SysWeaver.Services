@@ -192,6 +192,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwLanCertManager", "SwLanCe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.MicroService.LanCertificateManager", "..\SysWeaver\SysWeaver.MicroService.LanCertificateManager\SysWeaver.MicroService.LanCertificateManager.csproj", "{EFCDD408-6E76-446B-A39F-8E73003BCE1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.HttpTransformer.Image", "..\SysWeaver\SysWeaver.HttpTransformer.Image\SysWeaver.HttpTransformer.Image.csproj", "{A19DA79F-6BCB-41FB-BA56-29252780FD39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1330,6 +1332,18 @@ Global
 		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Release|x64.Build.0 = Release|Any CPU
 		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Release|x86.ActiveCfg = Release|Any CPU
 		{EFCDD408-6E76-446B-A39F-8E73003BCE1C}.Release|x86.Build.0 = Release|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Debug|x64.Build.0 = Debug|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Debug|x86.Build.0 = Debug|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Release|x64.ActiveCfg = Release|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Release|x64.Build.0 = Release|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Release|x86.ActiveCfg = Release|Any CPU
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1422,6 +1436,7 @@ Global
 		{46EDDB58-33F5-43C4-A208-B4827DF83E52} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 		{D5453C70-1E37-B985-321C-010979B5F9B7} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 		{EFCDD408-6E76-446B-A39F-8E73003BCE1C} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
+		{A19DA79F-6BCB-41FB-BA56-29252780FD39} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19E20D7F-3A21-4862-9481-9DFD897C2FA4}

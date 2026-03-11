@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.ExploreModule\SysWeaver.HttpServer.ExploreModule.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.IconModule\SysWeaver.HttpServer.IconModule.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpTransformer.Image\SysWeaver.HttpTransformer.Image.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.AspHttpServer\SysWeaver.MicroService.AspHttpServer.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Auth\SysWeaver.MicroService.Auth.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Edit\SysWeaver.MicroService.Edit.csproj" />
