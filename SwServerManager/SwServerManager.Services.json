@@ -17,7 +17,11 @@
   {
     "Type": "SysWeaver.Serialization.SafeJsonSerializer, SysWeaver.Serialization.SafeJson"
   },
-
+  /*
+  {
+    "Type": "SysWeaver.Compression.CompZstdSharp, SysWeaver.Compression.ZstdSharp"
+  },
+  */
   {
     "Type": "SysWeaver.Auth.SimpleAuthorizer, SysWeaver.Auth.Core",
     "Params": {
@@ -46,6 +50,7 @@
     "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
     "Params": {
       "Folders": [
+
         {
           "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer\\srcWeb",
           "WebFolder": "",
@@ -124,6 +129,7 @@
         }
 
       ]
+
     }
   },
 
@@ -162,7 +168,8 @@
   {
     "Type": "SysWeaver.MicroService.MediaService, SysWeaver.MicroService.Media"
   },
-
+  /*
+  
   {
     "Type": "SysWeaver.HttpTransformer.CachedTransformer, SysWeaver.HttpServer"
   },
@@ -171,6 +178,11 @@
     "Type": "SysWeaver.HttpTransformer.ImageTransformer, SysWeaver.HttpTransformer.Image"
   },
 
+  {
+    "Type": "SysWeaver.HttpTransformer.LosslessCompressionTransformer, SysWeaver.HttpTransformer.Image"
+  },
+
+  */
   {
     "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
   },
@@ -203,6 +215,21 @@
     }
 
   },
+
+  {
+    "Type": "SysWeaver.ReverseProxy.ReverseProxyServer, SysWeaver.ReverseProxy",
+
+  },
+
+  {
+    "Type": "SysWeaver.ReverseProxy.ReverseProxyClient, SysWeaver.ReverseProxy",
+    "Params": {
+      "BaseUrl": "https://dev.sysweaver.com",
+      "CredFile": "$(KeyFolder)/local_ServiceManager.txt"
+    }
+
+  },
+
 
   {
     "Type": "SysWeaver.MicroService.ServerManagerService, SysWeaver.MicroService.ServerManager",

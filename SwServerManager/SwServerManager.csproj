@@ -13,6 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Compression.ZstdSharp\SysWeaver.Compression.ZstdSharp.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.ExploreModule\SysWeaver.HttpServer.ExploreModule.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.IconModule\SysWeaver.HttpServer.IconModule.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpTransformer.Image\SysWeaver.HttpTransformer.Image.csproj" />
@@ -30,6 +31,7 @@
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.ServiceManager\SysWeaver.MicroServices.ServiceManager.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryUnix\SysWeaver.OsServices.ServiceHostFactoryUnix.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryWin32NT\SysWeaver.OsServices.ServiceHostFactoryWin32NT.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.ReverseProxy\SysWeaver.ReverseProxy.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security.Acme\SysWeaver.Security.Acme.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security\SysWeaver.Security.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Serialization.SafeJson\SysWeaver.Serialization.SafeJson.csproj" />
