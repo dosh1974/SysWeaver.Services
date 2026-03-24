@@ -196,6 +196,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.HttpTransformer.I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.ReverseProxy", "..\SysWeaver\SysWeaver.ReverseProxy\SysWeaver.ReverseProxy.csproj", "{CF520E0F-3EBF-4B14-9699-1B6A51FDDD41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseProxyServer", "ReverseProxyServer\ReverseProxyServer.csproj", "{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseProxyClient", "ReverseProxyClient\ReverseProxyClient.csproj", "{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1358,6 +1362,30 @@ Global
 		{CF520E0F-3EBF-4B14-9699-1B6A51FDDD41}.Release|x64.Build.0 = Release|Any CPU
 		{CF520E0F-3EBF-4B14-9699-1B6A51FDDD41}.Release|x86.ActiveCfg = Release|Any CPU
 		{CF520E0F-3EBF-4B14-9699-1B6A51FDDD41}.Release|x86.Build.0 = Release|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Debug|x64.Build.0 = Debug|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Debug|x86.Build.0 = Debug|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Release|x64.ActiveCfg = Release|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Release|x64.Build.0 = Release|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Release|x86.ActiveCfg = Release|Any CPU
+		{159B985E-EB12-4CD1-AC43-2E3D4E425AFE}.Release|x86.Build.0 = Release|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Debug|x64.Build.0 = Debug|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Debug|x86.Build.0 = Debug|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Release|x64.ActiveCfg = Release|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Release|x64.Build.0 = Release|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Release|x86.ActiveCfg = Release|Any CPU
+		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
