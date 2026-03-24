@@ -15,6 +15,7 @@
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.Log\SysWeaver.MicroServices.Log.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryWin32NT\SysWeaver.OsServices.ServiceHostFactoryWin32NT.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.ReverseProxy\SysWeaver.ReverseProxy.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security.Acme\SysWeaver.Security.Acme.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security\SysWeaver.Security.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Serialization.SafeJson\SysWeaver.Serialization.SafeJson.csproj" />
   </ItemGroup>
