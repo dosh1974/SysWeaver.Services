@@ -200,6 +200,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseProxyServer", "Rever
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseProxyClient", "ReverseProxyClient\ReverseProxyClient.csproj", "{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWeaver.Media.Png", "..\SysWeaver\SysWeaver.Media.Png\SysWeaver.Media.Png.csproj", "{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1386,6 +1388,18 @@ Global
 		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Release|x64.Build.0 = Release|Any CPU
 		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Release|x86.ActiveCfg = Release|Any CPU
 		{263DD94F-0642-4AA6-9F3A-614E1B21EF9D}.Release|x86.Build.0 = Release|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Debug|x64.Build.0 = Debug|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Debug|x86.Build.0 = Debug|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Release|x64.ActiveCfg = Release|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Release|x64.Build.0 = Release|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Release|x86.ActiveCfg = Release|Any CPU
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1480,6 +1494,7 @@ Global
 		{EFCDD408-6E76-446B-A39F-8E73003BCE1C} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 		{A19DA79F-6BCB-41FB-BA56-29252780FD39} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 		{CF520E0F-3EBF-4B14-9699-1B6A51FDDD41} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
+		{94B23CD3-7720-44C5-9B90-BF3D7A40CC2B} = {43CD38CA-BE7A-42EE-843A-D39BA97FEDF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19E20D7F-3A21-4862-9481-9DFD897C2FA4}

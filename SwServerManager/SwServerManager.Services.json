@@ -120,12 +120,6 @@
           "WebFolder": "",
           "ClientCacheDuration": 0,
           "RequestCacheDuration": 0
-        },
-        {
-          "DiscFolder": "D:\\Temp",
-          "WebFolder": "Test",
-          "ClientCacheDuration": 0,
-          "RequestCacheDuration": 0
         }
 
       ]
@@ -168,8 +162,7 @@
   {
     "Type": "SysWeaver.MicroService.MediaService, SysWeaver.MicroService.Media"
   },
-  /*
-  
+    
   {
     "Type": "SysWeaver.HttpTransformer.CachedTransformer, SysWeaver.HttpServer"
   },
@@ -182,7 +175,6 @@
     "Type": "SysWeaver.HttpTransformer.LosslessCompressionTransformer, SysWeaver.HttpTransformer.Image"
   },
 
-  */
   {
     "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
   },
@@ -215,21 +207,6 @@
     }
 
   },
-
-  {
-    "Type": "SysWeaver.ReverseProxy.ReverseProxyServer, SysWeaver.ReverseProxy",
-
-  },
-
-  {
-    "Type": "SysWeaver.ReverseProxy.ReverseProxyClient, SysWeaver.ReverseProxy",
-    "Params": {
-      "BaseUrl": "https://dev.sysweaver.com",
-      "CredFile": "$(KeyFolder)/local_ServiceManager.txt"
-    }
-
-  },
-
 
   {
     "Type": "SysWeaver.MicroService.ServerManagerService, SysWeaver.MicroService.ServerManager",
