@@ -80,7 +80,7 @@
   {
     "Type": "SysWeaver.ReverseProxy.ReverseProxyClient, SysWeaver.ReverseProxy",
     "Params": {
-      "BaseUrl": "https://dev.sysweaver.com",
+      "BaseUrl": "$(KeyFolder)/ReverseProxyClient_Server.txt",
       "CredFile": "$(KeyFolder)/ReverseProxyClient_ReverseProxyServer.txt"
     }
   },
