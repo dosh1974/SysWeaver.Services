@@ -38,6 +38,9 @@
   </ItemGroup>
 
   <ItemGroup>
+      <None Update="SwServerManager.Config.jsonxx">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
       <None Update="SwServerManager.Services.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
