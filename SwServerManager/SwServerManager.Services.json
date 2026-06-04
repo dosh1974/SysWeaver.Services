@@ -1,4 +1,4 @@
-[
+﻿[
 
   {
     "Type": "SysWeaver.MicroService.FileLogService, SysWeaver.MicroServices.Log"
@@ -50,7 +50,7 @@
     "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
     "Params": {
       "Folders": [
-
+        /*
         {
           "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer\\srcWeb",
           "WebFolder": "",
@@ -120,8 +120,21 @@
           "WebFolder": "",
           "ClientCacheDuration": 0,
           "RequestCacheDuration": 0
-        }
+        },
 
+        {
+          "DiscFolder": "D:\\Temp",
+          "WebFolder": "Test",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        },
+        {
+          "DiscFolder": "D:\\Effects",
+          "WebFolder": "Effects",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        }
+        */
       ]
 
     }
@@ -140,7 +153,10 @@
   },
 
   {
-    "Type": "SysWeaver.MicroService.ExploreHttpServerService, SysWeaver.MicroService.HttpServer"
+    "Type": "SysWeaver.MicroService.ExploreHttpServerService, SysWeaver.MicroService.HttpServer",
+    "Params": {
+      "Auth": null
+    }
   },
 
   {
@@ -162,19 +178,15 @@
   {
     "Type": "SysWeaver.MicroService.MediaService, SysWeaver.MicroService.Media"
   },
-    
-  {
-    "Type": "SysWeaver.HttpTransformer.CachedTransformer, SysWeaver.HttpServer"
-  },
-
+   
   {
     "Type": "SysWeaver.HttpTransformer.ImageTransformer, SysWeaver.HttpTransformer.Image"
   },
 
   {
-    "Type": "SysWeaver.HttpTransformer.LosslessCompressionTransformer, SysWeaver.HttpTransformer.Image"
+    "Type": "SysWeaver.HttpTransformer.LosslessCompressionTransformer, SysWeaver.HttpTransformer.Compress"
   },
-
+  
   {
     "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
   },
@@ -249,8 +261,8 @@
   },
 
   {
-    "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
-    //"Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
+    //"Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    "Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
     "Params": {
       "ListenOn": [
         {
