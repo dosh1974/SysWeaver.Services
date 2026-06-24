@@ -1,4 +1,4 @@
-[
+﻿[
 
   {
     "Type": "SysWeaver.MicroService.FileLogService, SysWeaver.MicroServices.Log",
@@ -110,8 +110,8 @@
       //"EndPoint": "https://api.cerebras.ai/v1",
       //"DefaultChatModel": "gpt-oss-120b"
 
-      "EndPoint": "http://192.168.1.112:1234/v1",
-      //"EndPoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
+      //"EndPoint": "http://192.168.1.112:1234/v1",
+      "EndPoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
       "CredFile": "C:\\Keys\\GoogleGemini.txt"
     }
   },
@@ -137,16 +137,19 @@
       "MediumModel": "gemini-2.5-flash-lite", // $0.10 + $0.40
       "HighModel": "gemini-2.5-flash-lite", // $0.10 + $0.40
 */
-      /*
+
       // Google (must match EndPoint and CredFile in OpenAiService params)
       "LowModel": "gemini-3.1-flash-lite-preview", // $0.25 + $1.50
       "MediumModel": "gemini-3.1-flash-lite-preview", // $0.25 + $1.50
       "HighModel": "gemini-3.1-pro-preview", // $2 + $12
-      */
+
+
+      /*
       // Local (must match EndPoint in OpenAiService params)
       "LowModel": "gemma-4-e4b", // Local "free"
       "MediumModel": "gemma-4-e4b", // Local "free"
       "HighModel": "gemma-4-e4b" // Local "free"
+      */
 
 
     }
@@ -178,10 +181,11 @@
     "Type": "SysWeaver.MicroService.TranslatorApiService, SysWeaver.MicroService.Translation"
   },
 
+  /*
   {
     "Type": "SysWeaver.MicroService.TranslatorExtensionHandlers, SysWeaver.MicroService.Translation"
   },
-
+  */
 
   {
     "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
