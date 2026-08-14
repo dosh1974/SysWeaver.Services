@@ -178,7 +178,7 @@
   {
     "Type": "SysWeaver.MicroService.MediaService, SysWeaver.MicroService.Media"
   },
-   
+   /*
   {
     "Type": "SysWeaver.HttpTransformer.ImageTransformer, SysWeaver.HttpTransformer.Image"
   },
@@ -186,7 +186,7 @@
   {
     "Type": "SysWeaver.HttpTransformer.LosslessCompressionTransformer, SysWeaver.HttpTransformer.Compress"
   },
-  
+  */
   {
     "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
   },
