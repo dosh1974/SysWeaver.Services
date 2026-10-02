@@ -110,8 +110,8 @@
       //"EndPoint": "https://api.cerebras.ai/v1",
       //"DefaultChatModel": "gpt-oss-120b"
 
-      //"EndPoint": "http://192.168.1.112:1234/v1",
-      "EndPoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
+      "EndPoint": "http://192.168.1.210:1234/v1",
+      //"EndPoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
       "CredFile": "C:\\Keys\\GoogleGemini.txt"
     }
   },
