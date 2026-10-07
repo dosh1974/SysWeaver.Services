@@ -35,7 +35,7 @@
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.ReverseProxy\SysWeaver.ReverseProxy.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security.Acme\SysWeaver.Security.Acme.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security\SysWeaver.Security.csproj" />
-    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Serialization.SafeJson\SysWeaver.Serialization.SafeJson.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\Serialization\SysWeaver.Serialization.SwJson\SysWeaver.Serialization.SwJson.csproj" />
   </ItemGroup>
 
   <ItemGroup>

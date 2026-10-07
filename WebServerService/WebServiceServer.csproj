@@ -20,7 +20,7 @@
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryUnix\SysWeaver.OsServices.ServiceHostFactoryUnix.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryWin32NT\SysWeaver.OsServices.ServiceHostFactoryWin32NT.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security.Acme\SysWeaver.Security.Acme.csproj" />
-    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Serialization.SafeJson\SysWeaver.Serialization.SafeJson.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\Serialization\SysWeaver.Serialization.SwJson\SysWeaver.Serialization.SwJson.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -5,7 +5,7 @@
   },
 
   {
-    "Type": "SysWeaver.Serialization.SafeJsonSerializer, SysWeaver.Serialization.SafeJson"
+    "Type": "SysWeaver.Serialization.SysWeaverJsonSerializer, SysWeaver.Serialization.SwJson"
   },
 
   {
