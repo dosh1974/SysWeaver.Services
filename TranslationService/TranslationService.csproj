@@ -26,7 +26,7 @@
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Translation\SysWeaver.MicroService.Translation.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.Log\SysWeaver.MicroServices.Log.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.ServiceManager\SysWeaver.MicroServices.ServiceManager.csproj" />
-    <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryWin32NT\SysWeaver.OsServices.ServiceHostFactoryWin32NT.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\Platform\SysWeaver.OsServices.ServiceHostFactoryWin32NT\SysWeaver.OsServices.ServiceHostFactoryWin32NT.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices\SysWeaver.OsServices.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security.Acme\SysWeaver.Security.Acme.csproj" />
     <ProjectReference Include="..\..\SysWeaver\Serialization\SysWeaver.Serialization.SwJson\SysWeaver.Serialization.SwJson.csproj" />

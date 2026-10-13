@@ -18,11 +18,11 @@
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Edit\SysWeaver.MicroService.Edit.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.NetHttpServer\SysWeaver.MicroService.NetHttpServer.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.Log\SysWeaver.MicroServices.Log.csproj" />
-    <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryUnix\SysWeaver.OsServices.ServiceHostFactoryUnix.csproj" />
-    <ProjectReference Include="..\..\SysWeaver\SysWeaver.OsServices.ServiceHostFactoryWin32NT\SysWeaver.OsServices.ServiceHostFactoryWin32NT.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\Platform\SysWeaver.OsServices.ServiceHostFactoryUnix\SysWeaver.OsServices.ServiceHostFactoryUnix.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\Platform\SysWeaver.OsServices.ServiceHostFactoryWin32NT\SysWeaver.OsServices.ServiceHostFactoryWin32NT.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security.Acme\SysWeaver.Security.Acme.csproj" />
     <ProjectReference Include="..\..\SysWeaver\Serialization\SysWeaver.Serialization.SwJson\SysWeaver.Serialization.SwJson.csproj" />
-    <ProjectReference Include="..\..\SysWeaver\SysWeaver.TextMessage.Fake\SysWeaver.TextMessage.Fake.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\Communication\SysWeaver.TextMessage.Fake\SysWeaver.TextMessage.Fake.csproj" />
   </ItemGroup>
 
   <ItemGroup>

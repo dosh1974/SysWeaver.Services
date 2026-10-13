@@ -1,0 +1,130 @@
+[
+
+  {
+    "Type": "SysWeaver.MicroService.FileLogService, SysWeaver.MicroServices.Log"
+  },
+
+  {
+    "Type": "SysWeaver.AppInfo, SysWeaver.Common",
+    "Params": {
+      "AppName": "Fake Email Service",
+      "AppSeed": 511301362
+    }
+  },
+
+  {
+    "Type": "FakeEmailService.FakeEmailServiceFiles, FakeEmailService"
+  },
+
+  {
+    "Type": "SysWeaver.Serialization.SysWeaverJsonSerializer, SysWeaver.Serialization.SwJson"
+  },
+
+  {
+    "Type": "SysWeaver.Auth.SimpleAuthorizer, SysWeaver.Auth.Core",
+    "Params": {
+      "Location": "C:\\Keys\\FakeEmailUsers.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.AuthManagerService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.LoginService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer"
+    /*    "Params": {
+      "Folders": [
+        {
+          "DiscFolder": "../../../srcWeb",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        }
+      ]
+    }*/
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.StaticDataHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ApiHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IconHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ExploreHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.WebMenuService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.TypeService, SysWeaver.MicroService.Edit"
+  },
+
+  {
+    "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security",
+    "Params": {
+      "Names": [ "fakeemail.sysweaver.com" ]
+    }
+  },
+
+  {
+    "Type": "SysWeaver.Excel.ExcelService, SysWeaver.Excel",
+    "Params": {
+      "CredFile": "C:\\Keys\\GemBox.Spreadsheet.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ChartJsService, SysWeaver.MicroService.ChartJs"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ChartJsExcelService, SysWeaver.MicroService.ChartJs.Excel"
+  },
+
+  {
+    "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IsoDataService, SysWeaver.MicroService.Edit"
+  },
+
+  {
+    "Type": "SysWeaver.Email.FakeEmailService, SysWeaver.Email.Fake",
+    "Params": {
+      "From": "noreply@fakeemail.sysweaver.com"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    "Params": {
+      "AllowBasicAuth": true,
+      "ListenOn": [
+        {
+          "Prefix": "https://*:443/",
+          "AddToFirewall": true,
+          "Certificate": "*"
+        }
+      ]
+
+    }
+  }
+
+
+
+]
