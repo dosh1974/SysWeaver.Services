@@ -33,6 +33,13 @@ The executable contains the entry point and an empty marker class, `FakeEmailSer
 - The build runs `..\..\SysWeaver\_tools\compress\Compress.exe` (Windows executable) to Brotli-compress `srcWeb` into the embedded `web` folder.
 - The shipped manifest is the author's own configuration (key files, host name); adapt before use.
 
+## Folder layout
+
+| Folder | Content |
+|---|---|
+| [`Properties/`](Properties/README.md) | Publish profile (self-contained win-x64) |
+| [`srcWeb/`](srcWeb/README.md) | Source of the embedded `app/Home.html` / `app/Welcome.html` pages showing the fake inbox (Brotli compressed into `web` at build time) |
+
 ## Relationships
 
 - **Project:** [`FakeEmailService.csproj`](FakeEmailService.csproj)

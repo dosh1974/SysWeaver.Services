@@ -42,6 +42,12 @@ The executable only contains the entry point; the functionality comes from [SysW
 - Runs elevated and can control services, edit files and reboot the machine: protect the users file and the network access.
 - The shipped manifests are the author's own configuration: key files, MySQL, managed service names, text files and the development `FileHttpServerModule` folders (`D:\SysWeaver\...\srcWeb`, `D:\Temp`, `D:\Effects`) must be adapted.
 
+## Folder layout
+
+| Folder | Content |
+|---|---|
+| [`Properties/`](Properties/README.md) | Publish profiles (self-contained win-x64 and linux-x64) |
+
 ## Relationships
 
 - **Project:** [`SwServerManager.csproj`](SwServerManager.csproj)

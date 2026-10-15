@@ -39,6 +39,12 @@ flowchart LR
 - The manager is a single point of trust and availability for all LAN certificates.
 - `Email` and `Domains` must be configured before certificates can be issued.
 
+## Folder layout
+
+| Folder | Content |
+|---|---|
+| [`Properties/`](Properties/README.md) | Publish profile (self-contained win-x64) |
+
 ## Relationships
 
 - **Project:** [`SwLanCertManager.csproj`](SwLanCertManager.csproj)

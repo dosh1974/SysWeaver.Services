@@ -39,6 +39,12 @@ flowchart LR
 - Needs a running [ReverseProxyServer](../ReverseProxyServer/README.md) and service credentials for it.
 - The `LanCertificateProvider` needs a reachable LAN certificate manager and its key files; switch to another certificate provider if none is available.
 
+## Folder layout
+
+| Folder | Content |
+|---|---|
+| [`Properties/`](Properties/README.md) | Publish profile (self-contained win-x64) |
+
 ## Relationships
 
 - **Project:** [`ReverseProxyClient.csproj`](ReverseProxyClient.csproj)
