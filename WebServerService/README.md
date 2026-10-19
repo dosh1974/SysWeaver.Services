@@ -32,6 +32,12 @@ The executable only contains the entry point; everything else is the SysWeaver w
 
 - Browsers warn about the self-signed certificate; use the commented out `AcmeCertificateProvider` (with your own e-mail and domain) for a public server.
 
+## Folder layout
+
+| Folder | Content |
+|---|---|
+| [`Properties/`](Properties/README.md) | Publish profile (self-contained win-x64) |
+
 ## Relationships
 
 - **Project:** [`WebServiceServer.csproj`](WebServiceServer.csproj)

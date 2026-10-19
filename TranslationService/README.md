@@ -44,6 +44,12 @@ The executable only contains the entry point; the functionality comes from [SysW
 - Requires a MySQL server for the translation cache and the API audit.
 - The shipped manifest is the author's own configuration (key files, LAN endpoint, relative `FileHttpServerModule` folders into a SysWeaver clone); adapt before use.
 
+## Folder layout
+
+| Folder | Content |
+|---|---|
+| [`Properties/`](Properties/README.md) | Publish profile (self-contained win-x64) |
+
 ## Relationships
 
 - **Project:** [`TranslationService.csproj`](TranslationService.csproj)

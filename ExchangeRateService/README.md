@@ -42,6 +42,12 @@ The executable only contains the entry point; all functionality comes from [SysW
 - The commercial sources require API keys and limit how often rates can be fetched.
 - The publish profile targets `win-x64` (self-contained); the Unix service host factory is referenced, so it can also be run as a systemd service when published for Linux.
 
+## Folder layout
+
+| Folder | Content |
+|---|---|
+| [`Properties/`](Properties/README.md) | Publish profile (self-contained win-x64) |
+
 ## Relationships
 
 - **Project:** [`ExchangeRateService.csproj`](ExchangeRateService.csproj)

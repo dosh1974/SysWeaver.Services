@@ -41,6 +41,12 @@ Requests are routed by sub path (default: `ReverseProxyFiles/<client id>-<end po
 - For a real public server the `LanCertificateProvider` should be replaced by a public certificate (ex: the commented out `AcmeCertificateProvider`).
 - Sub path routing breaks sites that use rooted paths; domain routing needs DNS records and certificates per client end point (see [SysWeaver.ReverseProxy](https://github.com/dosh1974/SysWeaver/blob/main/SysWeaver.ReverseProxy/README.md)).
 
+## Folder layout
+
+| Folder | Content |
+|---|---|
+| [`Properties/`](Properties/README.md) | Publish profile (self-contained win-x64) |
+
 ## Relationships
 
 - **Project:** [`ReverseProxyServer.csproj`](ReverseProxyServer.csproj)

@@ -44,6 +44,12 @@ The executable only contains the entry point; all functionality comes from [SysW
 - The shipped manifest is the author's own configuration: key file locations, host name and the development `FileHttpServerModule` folders (`D:\SysWeaver\...\srcWeb`) must be adapted.
 - The publish profile targets `win-x64` (self-contained); the Unix service host factory is referenced, so it can also be run as a systemd service when published for Linux.
 
+## Folder layout
+
+| Folder | Content |
+|---|---|
+| [`Properties/`](Properties/README.md) | Publish profile (self-contained win-x64) |
+
 ## Relationships
 
 - **Project:** [`IpLocationService.csproj`](IpLocationService.csproj)
