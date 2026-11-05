@@ -38,6 +38,17 @@
     <ProjectReference Include="..\..\SysWeaver\Serialization\SysWeaver.Serialization.SwJson\SysWeaver.Serialization.SwJson.csproj" />
   </ItemGroup>
 
+  <!-- Optional: the Fenrir service (the internal SysWeaver.Temp repository next to this one). When it is there it is built with this project
+       and its assemblies (with their dependencies) are copied to the build and publish output. No code uses it, so it is never loaded
+       unless SwServerManager.Services.json adds the service by its type name; without the repository nothing changes. -->
+  <PropertyGroup>
+    <FenrirProject>$(MSBuildThisFileDirectory)..\..\SysWeaver.Temp\SysWeaver.MicroService.Fenrir\SysWeaver.MicroService.Fenrir.csproj</FenrirProject>
+  </PropertyGroup>
+
+  <ItemGroup Condition="Exists('$(FenrirProject)')">
+    <ProjectReference Include="$(FenrirProject)" />
+  </ItemGroup>
+
   <ItemGroup>
       <None Update="SwServerManager.Config.jsonxx">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
