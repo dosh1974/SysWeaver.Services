@@ -7,7 +7,7 @@
   {
     "Type": "SysWeaver.AppInfo, SysWeaver.Common",
     "Params": {
-      "AppSeed": 498728593,
+      "AppSeed": 33891402,
       "AppName": "$(MachineNameCased)Manager",
       "AppDisplayName": "$(MachineNameCased) Manager",
       "AppDescription": "Manages SysWeaver services on $(MachineName)"
@@ -37,6 +37,7 @@
     "Type": "SysWeaver.MicroService.LoginService, SysWeaver.MicroService.Auth"
   },
 
+  /*
   {
     "Type": "SysWeaver.MicroService.MySqlApiAuditService, SysWeaver.MicroService.MySqlAudit",
     "Params": {
@@ -45,6 +46,7 @@
       "Schema": "ServerManager"
     }
   },
+  */
 
   {
     "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
@@ -190,10 +192,11 @@
         "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
       },
 
+      /*
       {
         "Type": "SysWeaver.Security.LanCertificateProvider, SysWeaver.Security"
       },
-
+      */
 
       /*  {
     "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
@@ -265,9 +268,9 @@
         "Params": {
           "ListenOn": [
             {
-              "Prefix": "https://*",
+              "Prefix": "http://*:1974",
               "AddToFirewall": true,
-              "Certificate": "*"
+              //"Certificate": "*"
             }
           ]
 

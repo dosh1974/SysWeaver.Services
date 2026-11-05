@@ -104,7 +104,10 @@
   },
 
   {
-    "Type": "SysWeaver.TextMessage.FakeTextMessageService, SysWeaver.TextMessage.Fake"
+    "Type": "SysWeaver.TextMessage.FakeTextMessageService, SysWeaver.TextMessage.Fake",
+    "Params": {
+      "Auth": null
+    }
   },
 
   {

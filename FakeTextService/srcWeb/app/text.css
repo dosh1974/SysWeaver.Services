@@ -1,113 +1,98 @@
-﻿
-body
-{
-    overflow: hidden;
+﻿/*
+ * app/text.css - styles of the FakeTextService Home / Welcome page (app/text.js), loaded after ../common/theme.css, ../sw/ui.css and
+ * ../explore/table.css. The page anatomy is the shared Design v2 one (ui/page.css: main.sw-page-fill.ft-page, the page header .sw-ph,
+ * the form card .sw-card.ft-card, the message table .ft-table.sw-fill taking the rest of the height); the inputs, button and table
+ * are the shared Sw components. Here only: ft-form (the fields), ft-actions (button + status), ft-status (.ft-ok / .ft-error),
+ * ft-table (the message table), ft-frame (the iframe fallback). Flat: no shadows, no gradients.
+ */
+
+html, body {
+    background-color: transparent;
 }
 
-input {
-    box-sizing: border-box;
-    font-size: 150%;
+body {
+    margin: 0;
+}
+
+/* The form card and the table: 16 px apart (4 px scale) */
+.ft-card {
+    flex: none;
+    margin-bottom: var(--sw-space-4);
+}
+
+/* System, phone number and text side by side when there is room, stacked on phones; the button and status below */
+.ft-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: var(--sw-space-2) var(--sw-space-4);
+    align-items: start;
+    max-width: 72rem;
+}
+
+.ft-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sw-space-2) var(--sw-space-4);
+}
+
+.ft-status {
+    margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+    .ft-status.ft-ok {
+        color: var(--sw-ok, var(--sw-fg));
+    }
+
+    .ft-status.ft-error {
+        color: var(--sw-danger, var(--sw-fg));
+    }
+
+/* The message table fills the rest of the page height (its footer stays at the bottom) */
+.ft-page > .ft-table {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 16rem;
+}
+
+    .ft-table > * {
+        flex: 1 1 auto;
+        min-height: 0;
+    }
+
+.ft-frame {
+    display: block;
     width: 100%;
-    border: none;
-    background-color: rgba(var(--ThemeMainRGB), 0.1);
-    color: var(--ThemeMain);
-    border-radius: var(--ThemeRadInp);
-    padding: 1px 12px 1px 12px;
-    border: 2px solid transparent;
-    outline: none !important;
-    transition: color linear var(--ThemeFadeDuration), border linear var(--ThemeFadeDuration);
-}
-
-    input:focus {
-        border: 2px solid var(--ThemeAcc2);
-        color: var(--ThemeAcc1);
-    }
-
-    input:hover {
-        border: 2px solid rgba(var(--ThemeAcc2RGB), 0.5);
-    }
-
-        input:hover:focus {
-            border: 2px solid var(--ThemeAcc2);
-        }
-
-
-    input::placeholder {
-        color: var(--ThemeMain25);
-        font-style: italic;
-        font-size: 80%;
-    }
-
-
-button {
-    box-sizing: border-box;
-    font-size: 150%;
-    width: 100%;
-    border: none;
-    background-color: var(--ThemeAcc1);
-    color: var(--ThemeMain);
-    border-radius: var(--ThemeRadInp);
-    padding: 1px 12px 1px 12px;
-    border: 2px solid transparent;
-    outline: none !important;
-    transition: color linear var(--ThemeFadeDuration), border linear var(--ThemeFadeDuration), opacity linear var(--ThemeFadeDuration);
-    color: var(--ThemeBackground);
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-button:disabled
-{
-    opacity: 0.25;
-    pointer-events: none;
-    cursor: default;
-}
-
-
-
-
-    button:focus {
-        border: 2px solid var(--ThemeAcc2);
-        opacity: 1.0;
-    }
-
-    button:hover {
-        border: 2px solid rgba(var(--ThemeAcc2RGB), 0.5);
-        opacity: 1.0;
-    }
-
-        button:hover:focus {
-            border: 2px solid var(--ThemeAcc2);
-            opacity: 1.0;
-        }
-
-
-iframe {
-    box-shadow: 0 0 64px rgba(var(--ThemeAcc1RGB), .15);
-    box-sizing: border-box;
-    position: absolute;
-    display: block;
-    top: 20em;
-    left: 0;
-    width: 100vw;
-    height: calc(100vh - 20em);
+    height: 70vh;
     border: none;
 }
 
-SysWeaver-Label {
-    display: block;
-    padding: 0.25em;
-    font-size: 75%;
-    text-transform: uppercase;
-    color: var(--ThemeAcc2);
+/* Phones and low screens: the page scrolls as a whole (header, form, then the table at its own height) */
+@media (max-width: 760px), (max-height: 500px) {
+    html.Embedded:has(> body > .ft-page), html.Embedded:has(> body > .ft-page) > body, .ft-page {
+        height: auto;
+    }
+
+    .ft-page > .ft-table {
+        flex: none;
+        height: max(24rem, 80svh);
+    }
 }
 
-input[type="tel"] {
-    display: block;
-    margin-bottom: 1em;
-}
+/* Low screens (phones in landscape): the fields and the button in one row */
+@media (max-height: 500px) {
+    .ft-form {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+        align-items: end;
+    }
 
-input[type="text"] {
-    display: block;
-    margin-bottom: 1em;
+    /* (a status line wraps below the button) */
+    .ft-actions {
+        grid-column: auto;
+        max-width: 16rem;
+    }
 }

@@ -2,7 +2,7 @@
 
 [⬆ FakeTextService](../README.md)
 
-> Source of the web pages that FakeTextService embeds and serves: its own versions of the `app/Home.html` and `app/Welcome.html` pages, a form to simulate incoming text messages plus the message list.
+> Source of the web pages that FakeTextService embeds and serves: its own versions of the `app/Home.html` and `app/Welcome.html` pages, a form to send a text message from a phone to the system plus the message list.
 
 | | |
 |---|---|

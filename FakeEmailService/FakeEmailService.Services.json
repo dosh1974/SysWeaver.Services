@@ -106,7 +106,8 @@
   {
     "Type": "SysWeaver.Email.FakeEmailService, SysWeaver.Email.Fake",
     "Params": {
-      "From": "noreply@fakeemail.sysweaver.com"
+      "From": "noreply@fakeemail.sysweaver.com",
+      "Auth": null
     }
   },
 

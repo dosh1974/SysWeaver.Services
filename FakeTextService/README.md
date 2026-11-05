@@ -32,6 +32,7 @@ The executable contains the entry point and an empty marker class, `FakeTextServ
 - Messages are only kept in memory; they are lost when the service stops.
 - The build runs `..\..\SysWeaver\_tools\compress\Compress.exe` (Windows executable) to Brotli-compress `srcWeb` into the embedded `web` folder.
 - The shipped manifest is the author's own configuration (key files, host name); adapt before use.
+- The fake service's `"Auth"` is `null` (the default, as the original), so its messages, APIs and menu items are open to everyone who reaches the server, including the services that send through it. When others can reach it, set it to the roles of your testers (ex: `"Ops,Dev,Debug"`); the services that send through it then need such a user too.
 
 ## Folder layout
 
