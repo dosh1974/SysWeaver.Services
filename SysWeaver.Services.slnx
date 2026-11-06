@@ -143,6 +143,7 @@
     <Project Path="../SysWeaver/_external/simplestack.orm/src/SimpleStack.Orm.MySQLConnector/SimpleStack.Orm.MySQLConnector.csproj" />
     <Project Path="../SysWeaver/_external/simplestack.orm/src/SimpleStack.Orm/SimpleStack.Orm.csproj" />
   </Folder>
+  <Project Path="../SysWeaver.Temp/SysWeaver.MicroService.Fenrir/SysWeaver.MicroService.Fenrir.csproj" />
   <Project Path="ExchangeRateService/ExchangeRateService.csproj" />
   <Project Path="FakeEmailService/FakeEmailService.csproj" />
   <Project Path="FakeTextService/FakeTextService.csproj" />
