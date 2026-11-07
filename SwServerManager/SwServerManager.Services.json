@@ -192,11 +192,11 @@
         "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
       },
 
-      /*
+      
       {
         "Type": "SysWeaver.Security.LanCertificateProvider, SysWeaver.Security"
       },
-      */
+      
 
       /*  {
     "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
@@ -263,14 +263,14 @@
       },
 
       {
-        //"Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
-        "Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
+        "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+        //"Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
         "Params": {
           "ListenOn": [
             {
-              "Prefix": "http://*:1974",
+              "Prefix": "https://*",
               "AddToFirewall": true,
-              //"Certificate": "*"
+              "Certificate": "*"
             }
           ]
 
