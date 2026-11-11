@@ -13,6 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.AI.Google\SysWeaver.AI.Google.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.AI.LlmTranslator\SysWeaver.AI.LlmTranslator.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.AI.OpenAI\SysWeaver.AI.OpenAI.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.ExploreModule\SysWeaver.HttpServer.ExploreModule.csproj" />

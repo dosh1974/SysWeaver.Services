@@ -102,7 +102,7 @@
 
 
   {
-    "Type": "SysWeaver.AI.OpenAiService, SysWeaver.AI.OpenAI",
+    "Type": "SysWeaver.AI.GoogleAiService, SysWeaver.AI.Google",
     "Params": {
       "NetworkTimeoutSeconds": 300,
       //"CredFile": "C:\\Keys\\OpenAI.txt",
@@ -110,7 +110,7 @@
       //"EndPoint": "https://api.cerebras.ai/v1",
       //"DefaultChatModel": "gpt-oss-120b"
 
-      "EndPoint": "http://192.168.1.210:1234/v1",
+      //"EndPoint": "http://192.168.1.210:1234/v1",
       //"EndPoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
       "CredFile": "C:\\Keys\\GoogleGemini.txt"
     }
