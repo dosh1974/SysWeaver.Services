@@ -2,7 +2,7 @@
 
   <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net10.0</TargetFramework>
+        <TargetFramework>net11.0</TargetFramework>
         <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
         <GenerateDocumentationFile>True</GenerateDocumentationFile>
         <NoWarn>1701;1702;1591</NoWarn>
@@ -10,6 +10,10 @@
         <PublishSingleFile>false</PublishSingleFile>
         <PublishTrimmed>false</PublishTrimmed>
 		<RootNamespace>SysWeaver</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+        <Features>runtime-async=on</Features>
   </PropertyGroup>
 
   <ItemGroup>
