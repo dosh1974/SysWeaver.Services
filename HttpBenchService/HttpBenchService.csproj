@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <RootNamespace>SysWeaver.HttpBench</RootNamespace>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <IsPackable>false</IsPackable>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishSingleFile>false</PublishSingleFile>
+    <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+
+  <!-- The same services as SwServerManager (except the folder sync / server manager), so this host is also a realistic target for itself -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.ExploreModule\SysWeaver.HttpServer.ExploreModule.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpServer.IconModule\SysWeaver.HttpServer.IconModule.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Auth\SysWeaver.MicroService.Auth.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.ChartJs\SysWeaver.MicroService.ChartJs.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Edit\SysWeaver.MicroService.Edit.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.FileUploader\SysWeaver.MicroService.FileUploader.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.HttpServer\SysWeaver.MicroService.HttpServer.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Media\SysWeaver.MicroService.Media.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.NetHttpServer\SysWeaver.MicroService.NetHttpServer.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.Log\SysWeaver.MicroServices.Log.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroServices.ServiceManager\SysWeaver.MicroServices.ServiceManager.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\Platform\SysWeaver.OsServices.ServiceHostFactoryUnix\SysWeaver.OsServices.ServiceHostFactoryUnix.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\Platform\SysWeaver.OsServices.ServiceHostFactoryWin32NT\SysWeaver.OsServices.ServiceHostFactoryWin32NT.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.Security\SysWeaver.Security.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\Serialization\SysWeaver.Serialization.SwJson\SysWeaver.Serialization.SwJson.csproj" />
+  </ItemGroup>
+
+  <!-- The bench service itself (apis, charts and the page), the tests run in SysWeaver.HttpBench.Core -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.HttpBench\SysWeaver.HttpBench.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="HttpBenchService.Services.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

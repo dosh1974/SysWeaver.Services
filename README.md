@@ -37,6 +37,7 @@ The shipped manifests are the author's own configurations (key files in `C:\Keys
 | [ExchangeRateService](ExchangeRateService/README.md) | Stand-alone exchange rate server: hosts SysWeaver.ExchangeRate with fixer.io and exchangeratesapi.io sources behind an authenticated HTTPS web UI and API. |
 | [FakeEmailService](FakeEmailService/README.md) | Stand-alone fake email server for development and testing: hosts SysWeaver.Email.Fake and its web inbox behind an authenticated HTTPS web UI. |
 | [FakeTextService](FakeTextService/README.md) | Stand-alone fake text message server for development and testing: hosts SysWeaver.TextMessage.Fake with a web UI behind an authenticated HTTPS server. |
+| [HttpBenchService](HttpBenchService/README.md) | Development host for the HTTP bench service: a web page that performance tests a SysWeaver server (many workers call its public end points, then a report with tables and charts). |
 | [IpLocationService](IpLocationService/README.md) | Stand-alone IP geolocation server: hosts SysWeaver.IpLocation with commercial web API sources and a MySQL cache behind an authenticated HTTPS web UI and API. |
 | [ReverseProxyClient](ReverseProxyClient/README.md) | Example reverse proxy client: connects out to a ReverseProxyServer so that this machine's web end points become reachable through the public server. |
 | [ReverseProxyServer](ReverseProxyServer/README.md) | Example public facing reverse proxy server: reverse proxy clients connect to it, and it routes incoming HTTPS requests to their end points. |
@@ -48,7 +49,7 @@ The shipped manifests are the author's own configurations (key files in `C:\Keys
 ## PLATFORM
 - All projects target **.NET 10** (`net10.0`).
 - Each project has a folder publish profile in `Properties/PublishProfiles` producing a self-contained **win-x64** build in `bin\publish\...`; `SwServerManager` also has a **linux-x64** profile.
-- `ExchangeRateService`, `FakeEmailService`, `FakeTextService`, `IpLocationService`, `SwServerManager` and `WebServerService` reference both the Windows and the Unix (systemd / SysVinit) service host factories; `ReverseProxyClient`, `ReverseProxyServer`, `SwLanCertManager` and `TranslationService` only reference the Windows one, so they can only be installed as Windows services.
+- `ExchangeRateService`, `FakeEmailService`, `FakeTextService`, `HttpBenchService`, `IpLocationService`, `SwServerManager` and `WebServerService` reference both the Windows and the Unix (systemd / SysVinit) service host factories; `ReverseProxyClient`, `ReverseProxyServer`, `SwLanCertManager` and `TranslationService` only reference the Windows one, so they can only be installed as Windows services.
 
 ## BUILD  
 Building requires that the [SysWeaver](https://github.com/dosh1974/SysWeaver) repository is Cloned to the same folder as the [SysWeaver.Services](https://github.com/dosh1974/SysWeaver.Services) repository:  

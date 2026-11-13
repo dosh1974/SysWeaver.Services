@@ -63,12 +63,17 @@
   },
 
   {
+    "Type": "SysWeaver.Security.LanCertificateProvider, SysWeaver.Security"
+  },
+
+  /*
+  {
     "Type": "SysWeaver.Security.SelfSignedCertificateProvider, SysWeaver.Security",
     "Params": {
       "Names": [ "webserver.sysweaver.com" ]
     }
   },
-
+  */
   /*
   {
     "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
@@ -89,10 +94,11 @@
 
   {
     "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    //"Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
     "Params": {
       "ListenOn": [
         {
-          "Prefix": "https://*:443/",
+          "Prefix": "https://*",
           "AddToFirewall": true,
           "Certificate": "*"
         }
@@ -100,7 +106,6 @@
 
     }
   }
-
 
 
 ]

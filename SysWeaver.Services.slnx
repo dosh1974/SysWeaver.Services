@@ -30,6 +30,8 @@
     <Project Path="../SysWeaver/SysWeaver.FileDatabase/SysWeaver.FileDatabase.csproj" />
     <Project Path="../SysWeaver/SysWeaver.FileTranslation/SysWeaver.FileTranslation.csproj" />
     <Project Path="../SysWeaver/SysWeaver.FolderSync/SysWeaver.FolderSync.csproj" />
+    <Project Path="../SysWeaver/SysWeaver.HttpBench.Core/SysWeaver.HttpBench.Core.csproj" />
+    <Project Path="../SysWeaver/SysWeaver.HttpBench/SysWeaver.HttpBench.csproj" />
     <Project Path="../SysWeaver/SysWeaver.HttpServer.ExploreModule/SysWeaver.HttpServer.ExploreModule.csproj" />
     <Project Path="../SysWeaver/SysWeaver.HttpServer.IconModule/SysWeaver.HttpServer.IconModule.csproj" />
     <Project Path="../SysWeaver/SysWeaver.HttpServer.IsoDataModule/SysWeaver.HttpServer.IsoDataModule.csproj" />
@@ -149,6 +151,7 @@
   <Project Path="ExchangeRateService/ExchangeRateService.csproj" />
   <Project Path="FakeEmailService/FakeEmailService.csproj" />
   <Project Path="FakeTextService/FakeTextService.csproj" />
+  <Project Path="HttpBenchService/HttpBenchService.csproj" />
   <Project Path="IpLocationService/IpLocationService.csproj" />
   <Project Path="ReverseProxyClient/ReverseProxyClient.csproj" />
   <Project Path="ReverseProxyServer/ReverseProxyServer.csproj" />

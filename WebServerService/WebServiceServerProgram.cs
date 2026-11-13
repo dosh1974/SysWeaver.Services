@@ -10,7 +10,7 @@ namespace WebServiceServer
             ServiceHost.Run(new ServiceParams
             {
                 Name = "WebServiceServer",
-                NeedToRunElevated = true,
+                NeedToRunElevated = false,
                 DisplayName = "SysWeaver - Web Server",
                 Description = "This is a simple \"bare minimum\" web server.",
             });

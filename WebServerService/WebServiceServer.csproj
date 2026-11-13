@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.IsoData\SysWeaver.IsoData.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.AspHttpServer\SysWeaver.MicroService.AspHttpServer.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Auth\SysWeaver.MicroService.Auth.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Edit\SysWeaver.MicroService.Edit.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.NetHttpServer\SysWeaver.MicroService.NetHttpServer.csproj" />
