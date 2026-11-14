@@ -1,0 +1,133 @@
+[
+
+  {
+    "Type": "SysWeaver.MicroService.FileLogService, SysWeaver.MicroServices.Log"
+  },
+
+  {
+    "Type": "SysWeaver.Serialization.SysWeaverJsonSerializer, SysWeaver.Serialization.SwJson"
+  },
+
+  {
+    "Type": "SysWeaver.Auth.SimpleAuthorizer, SysWeaver.Auth.Core",
+    "Params": {
+      "Location": "$(KeyFolder)/ComfyUi_Users.txt"
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.AuthManagerService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.LoginService, SysWeaver.MicroService.Auth"
+  },
+
+  {
+    "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
+    "Params": {
+      "Folders": [
+        /*        {
+          "DiscFolder": "Some folder",
+          "WebFolder": "",
+          "ClientCacheDuration": 0,
+          "RequestCacheDuration": 0
+        }
+*/
+      ]
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.StaticDataHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ApiHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IconHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.ExploreHttpServerService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.WebMenuService, SysWeaver.MicroService.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.TypeService, SysWeaver.MicroService.Edit"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.MediaService, SysWeaver.MicroService.Media"
+  },
+
+  {
+    "Type": "SysWeaver.Security.LanCertificateProvider, SysWeaver.Security"
+  },
+
+  /*
+  {
+    "Type": "SysWeaver.Security.AcmeCertificateProvider, SysWeaver.Security.Acme",
+    "Params": {
+      "Email": "yourname@yourdomain",
+      "DomainName": "comfyui.sysweaver.com"
+    }
+  },
+  */
+
+  {
+    "Type": "SysWeaver.Security.FirewallHandler, SysWeaver.HttpServer"
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.IsoDataService, SysWeaver.MicroService.Edit"
+  },
+
+  // The ComfyUI client, requires a ComfyUI server with ComfyUI-Connect
+  {
+    "Type": "SysWeaver.AI.ComfyUiService, SysWeaver.AI.ComfyUi",
+    "Params": {
+      "EndPoint": "http://127.0.0.1:8188",
+      // Optional api key (sent as an "Authorization" header, ex: when ComfyUI is behind an authenticating proxy), not required if the file doesn't exist
+      "CredFile": "$(KeyFolder)/ComfyUi.txt",
+      // Workflows used by RunWorkflow (API format json files)
+      "WorkflowFolder": "$(ExecutableDir)/ComfyUiWorkflows",
+      // Workflows used by the task methods (TextToImage etc), all *.json files are analyzed and added
+      "TaskWorkflowFolders": [
+        "$(ExecutableDir)/ComfyUiWorkflows",
+        "D:\\ComfuUiWorkflowsAPI"
+      ]
+    }
+  },
+
+  // Web API's for the media creation methods of the ComfyUiService (Api/comfyui/TextToImage etc)
+  {
+    "Type": "SysWeaver.AI.ComfyUiApiService, SysWeaver.AI.ComfyUi",
+    "Params": {
+      // Empty = any logged in user
+      "Auth": ""
+    }
+  },
+
+  {
+    "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
+    //"Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",
+    "Params": {
+      "ListenOn": [
+        {
+          "Prefix": "https://*",
+          "AddToFirewall": true,
+          "Certificate": "*"
+        }
+      ]
+
+    }
+  }
+
+
+]
