@@ -51,7 +51,7 @@
   {
     "Type": "SysWeaver.Net.FileHttpServerModule, SysWeaver.HttpServer",
     "Params": {
-      /*
+      
       "Folders": [
         {
           "DiscFolder": "D:\\SysWeaver\\SysWeaver.HttpServer\\srcWeb",
@@ -137,7 +137,7 @@
           "RequestCacheDuration": 0
         }
       ]
-*/
+
     }
   },
 
