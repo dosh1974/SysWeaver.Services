@@ -114,6 +114,28 @@
     }
   },
 
+  // MCP (Model Context Protocol) end point at "/mcp", exposes the AI tools of all services and the web API's of ComfyUiApiService (TextToImage etc, generated files are returned as urls at "/mcp/data/...")
+  {
+    "Type": "SysWeaver.AI.McpService, SysWeaver.AI.McpService",
+    "Params": {
+      "Url": "mcp",
+      // Empty = any logged in user (an API key can be used: "Authorization: Bearer <key>")
+      "Auth": "",
+      // How long generated files are available at "/mcp/data/..." (kept in memory)
+      "DataLifetimeMinutes": 60,
+      // Long tool calls (ex: video generation) are streamed as server sent events with a keep alive every KeepAliveSeconds
+      "StreamToolCalls": true,
+      "KeepAliveSeconds": 15,
+      "WebApis": [
+        {
+          "InstanceType": "SysWeaver.AI.ComfyUiApiService, SysWeaver.AI.ComfyUi",
+          // Return the url of generated files (images, video, audio) instead of attaching the data (MCP tool results are limited in size)
+          "ProxyData": true
+        }
+      ]
+    }
+  },
+
   {
     "Type": "SysWeaver.MicroService.NetHttpServerService, SysWeaver.MicroService.NetHttpServer",
     //"Type": "SysWeaver.MicroService.AspHttpServerService, SysWeaver.MicroService.AspHttpServer",

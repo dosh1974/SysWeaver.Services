@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.AI.ComfyUi\SysWeaver.AI.ComfyUi.csproj" />
+    <ProjectReference Include="..\..\SysWeaver\SysWeaver.AI.McpService\SysWeaver.AI.McpService.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.IsoData\SysWeaver.IsoData.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.AspHttpServer\SysWeaver.MicroService.AspHttpServer.csproj" />
     <ProjectReference Include="..\..\SysWeaver\SysWeaver.MicroService.Auth\SysWeaver.MicroService.Auth.csproj" />
